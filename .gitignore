@@ -1,0 +1,4 @@
+/node_modules/*
+.bowerrc
+/.gulp-scss-cache/*
+/.sass-cache/*

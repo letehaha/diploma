@@ -1,0 +1,40 @@
+
+// This file contains all the necessary variables for the 'main.scss' file
+
+// basic color elements
+$main-color: #222;
+
+// size toggle_menu in header
+$w: 40px;
+$h: 4px;
+
+// color 'top_menu' items (:hover)
+$spec_color: rgba(47, 201, 137,1);
+
+//bf-colors
+$bg-light: rgba(189, 189, 189, 1);
+$bg-dark: rgba(25, 25, 25, 1);
+$bg-light-ft: rgba(35, 35, 35, 1);
+
+//text-color
+$light_text-color: rgba(250,250,250,1);
+$dark_text-color: rgba(33, 33, 33, 1);
+
+//class for html
+
+.bg-contact-message{
+	background-color: $spec_color;
+}
+.bg-light-ft{
+	background-color: $bg-light-ft;
+}
+.bg_light{
+	background-color: $bg-light;
+}
+.bg_dark{
+	background-color: $bg-dark;
+	color: #fff;
+	h2:after{
+		background-color: #fff;
+	}
+}

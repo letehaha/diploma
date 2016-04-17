@@ -1,0 +1,14 @@
+.bg-contact-message {
+  background-color: #2fc989; }
+
+.bg-light-ft {
+  background-color: #232323; }
+
+.bg_light {
+  background-color: #bdbdbd; }
+
+.bg_dark {
+  background-color: #191919;
+  color: #fff; }
+  .bg_dark h2:after {
+    background-color: #fff; }
