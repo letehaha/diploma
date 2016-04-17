@@ -1,11 +1,11 @@
-var gulp 		= require('gulp'),
-	browserSync = require('browser-sync'),
-	scss 		= require('gulp-scss'),
-	concat      = require('gulp-concat'),
+var gulp 	= require('gulp'),
+    browserSync = require('browser-sync'),
+    scss 	= require('gulp-scss'),
+    concat      = require('gulp-concat'),
     uglify      = require('gulp-uglifyjs'),
     cssnano     = require('gulp-cssnano'),
     rename      = require('gulp-rename'),
-    gzip 		= require('gulp-gzip'),
+    gzip 	= require('gulp-gzip'),
     del         = require('del');
 
 gulp.task('scss', function(){
@@ -43,7 +43,7 @@ gulp.task('scripts', function() {
 
 
 gulp.task('css-libs', function() {
-    return gulp.src([ // Выбир всех css-файлов для минификации
+    return gulp.src([ // Выбор всех css-файлов для минификации
     	'app/libs/animate/animate.min.css',
     	'app/libs/bootstrap/bootstrap-grid.min.css',
     	'app/libs/font-awesome/font-awesome.min.css',
@@ -77,10 +77,10 @@ gulp.task('build',['clean', 'scss', 'scripts'], function() {
     var buildImage = gulp.src('app/img/*') // Перенос шрифтов в продакшен
     .pipe(gulp.dest('dist/img'))
 
-    var buildJs = gulp.src('app/js/**/*') // Переносим скриптов в продакшен
+    var buildJs = gulp.src('app/js/**/*') // Перенос скриптов в продакшен
     .pipe(gulp.dest('dist/js'))
 
-    var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
+    var buildHtml = gulp.src('app/*.html') // Перенос HTML в продакшен
     .pipe(gulp.dest('dist'));
 
 });
