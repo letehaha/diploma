@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
 
 	$(window).load(function(){
 		$("preloader-dots").fadeOut();
@@ -72,21 +72,6 @@ $(document).ready(function() {
 	});
 
 
-	//form
-	// $("#contact_form").submit(function() {
-	// 	$.ajax({
-	// 		type: "POST",
-	// 		url: "../php/mail.php",
-	// 		data: $(this).serialize()
-	// 	}).done(function() {
-	// 		$(this).find("input").val("");
-	// 		alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-	// 		$("#contact_form").trigger("reset");
-	// 	});
-	// 	return false;
-	// });
-
-
 	//Scroll to id
 	$("a[href*='#']").mPageScroll2id();
 
@@ -124,4 +109,33 @@ $(document).ready(function() {
 	    this.target = "_blank";
 	});
 	
+
+	//forms
+
+	$("#contact_form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "../php/contact_form.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Hello!");
+			$("#contact_form").trigger("reset");
+		});
+		return false;
+	});
+
+	$("#contact_form-message").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "../php/contact_form-message.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Hello!");
+			$("#contact_form-message").trigger("reset");
+		});
+		return false;
+	});
+
 });

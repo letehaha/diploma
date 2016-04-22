@@ -689,13 +689,14 @@ section{
 			input[type="submit"]{
 				margin-bottom: 0;
 				background: $spec_color;
-				border: none;
+				border: 1px solid #fff;
 				padding: 10px 25px;
 				font-size: 1.5em;
 				color: white;
 				transition: all 0.3s;
 				&:hover{
-					background-color: #138A56;
+					background-color: #fff;
+					color: rgba(35, 152, 104,1.0);
 				}
 			}
 		}
@@ -815,19 +816,15 @@ section{
 	padding: 30px;
 	display: block;
 	.title{
-		font-size: 12px;
+		font: 300 12px/1 'Lato', sans-serif;
 		text-transform: uppercase;
-		letter-spacing: .2em;
-		font-weight: 300;
 		margin-bottom: 20px;
 		color: #8c8c8c;
 	}
 	p{
-		font-size: 12px;
+		font: 300 12px/17px 'Lato', sans-serif;
 		margin: 20px 0;
 		color: #8c8c8c;
-		font-weight: 300;
-		// letter-spacing: 1px;
 		a{
 			color: inherit;
 			text-transform: uppercase;
@@ -840,6 +837,10 @@ section{
 			padding: 10px;
 			margin-bottom: 20px;
 			border: 1px solid rgba(255,255,255,.5);
+			transition: .3s all;
+			&:focus{
+				transform: scale(1.05, 1.05);
+			}
 		}
 		&[type="submit"]{
 			padding: 10px 30px;

@@ -569,13 +569,14 @@ section {
     .form_wrapper form .input-submit input[type="submit"] {
       margin-bottom: 0;
       background: #2fc989;
-      border: none;
+      border: 1px solid #fff;
       padding: 10px 25px;
       font-size: 1.5em;
       color: white;
       transition: all 0.3s; }
       .form_wrapper form .input-submit input[type="submit"]:hover {
-        background-color: #138A56; }
+        background-color: #fff;
+        color: #239868; }
   .form_wrapper form .descr-form-type {
     margin-top: 3em; }
     .form_wrapper form .descr-form-type h3 {
@@ -669,17 +670,14 @@ section {
   padding: 30px;
   display: block; }
   .ft-section .title {
-    font-size: 12px;
+    font: 300 12px/1 'Lato', sans-serif;
     text-transform: uppercase;
-    letter-spacing: .2em;
-    font-weight: 300;
     margin-bottom: 20px;
     color: #8c8c8c; }
   .ft-section p {
-    font-size: 12px;
+    font: 300 12px/17px 'Lato', sans-serif;
     margin: 20px 0;
-    color: #8c8c8c;
-    font-weight: 300; }
+    color: #8c8c8c; }
     .ft-section p a {
       color: inherit;
       text-transform: uppercase; }
@@ -689,7 +687,10 @@ section {
     .ft-section input[type="email"] {
       padding: 10px;
       margin-bottom: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.5); }
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      transition: .3s all; }
+      .ft-section input[type="email"]:focus {
+        transform: scale(1.05, 1.05); }
     .ft-section input[type="submit"] {
       padding: 10px 30px;
       border: 2px solid white;

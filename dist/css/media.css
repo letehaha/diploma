@@ -63,9 +63,11 @@
 		font-size: 2em;
 	}
 	.s_portfolio .portfolio_item .work_hover a{
-		border: 5px solid rgb(47, 201, 137);
+	    border: 1px solid #138A56;
 		padding: 15px 30px;
 		font-size: 1.5em;
+		background-color: #2fc989;
+		color: #fff;
 	}
 }
 
