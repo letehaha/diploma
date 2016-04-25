@@ -112,15 +112,21 @@ $(function() {
 
 	//forms
 
-	$("#contact_form").submit(function() {
+
+	$("#send").click(function() {
+		console.log('send');
 		$.ajax({
 			type: "POST",
 			url: "../php/contact_form.php",
-			data: $(this).serialize()
-		}).done(function() {
-			$(this).find("input").val("");
-			alert("Hello!");
-			$("#contact_form").trigger("reset");
+			data: $('#contact_form').serialize(),
+			success: function(res){
+				var data = JSON.parse(res);
+				if(data.status == 'success'){
+					$(this).find("input").val("");
+					$("#contact_form").trigger("reset");
+				}
+				alert(data.text);
+			}
 		});
 		return false;
 	});
