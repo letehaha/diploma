@@ -32,7 +32,7 @@
 @media only screen and (max-width : 768px) {
 	.main_head{
 	    max-height: 600px;
-		background-image: url("../img/bg-header(med).jpg");
+		background-image: url("../img/bg/bg-header(med).jpg");
 	}
 	.about_wrapper .intro .about_photo{
 		float: left;
@@ -138,7 +138,7 @@
 		padding: 30px 0;
 	}
 	.main_head{
-		background-image: url("../img/bg-header(sml).jpg");
+		background-image: url("../img/bg/bg-header(sml).jpg");
 	}
 	.form_wrapper-contact form .group .left,
 	.form_wrapper-contact form .group .right,

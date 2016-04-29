@@ -8,7 +8,7 @@ var gulp 		= require('gulp'),
     del         = require('del');
 
 gulp.task('scss', function(){
-    return gulp.src('app/scss/*.scss')
+    return gulp.src('app/scss/main.scss')
         .pipe(scss())
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}))

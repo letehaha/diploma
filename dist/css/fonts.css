@@ -1,27 +1,17 @@
 @font-face {
-font-family: "Lato";
-  src: url("../fonts/lato-bold.eot");
+font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
   src: local('☺'), 
-  url("../font/lato-bold.eot") format("embedded-opentype"), 
-  url("../font/lato-bold.woff") format("woff"),
-  url("../font/lato-bold.woff2") format("woff2"),
-  url("../font/lato-bold.ttf") format("truetype"), 
-  url("../font/lato-bold.svg") format("svg");
-
+  url("../fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-font-family: "Lato";
-  src: url("../fonts/lato-bold.eot");
-  src: local('☺'), 
-  url("../font/lato-regular.eot") format("embedded-opentype"), 
-  url("../font/lato-regular.woff") format("woff"),
-  url("../font/lato-regular.woff2") format("woff2"),
-  url("../font/lato-regular.ttf") format("truetype"), 
-  url("../font/lato-regular.svg") format("svg");
-
+font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  src: local('☺'),
+  url("../fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
