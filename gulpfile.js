@@ -76,7 +76,7 @@ gulp.task('build',['clean', 'scss', 'scripts'], function() {
     var buildFonts = gulp.src('app/php/**/*') // Перенос php в продакшен
     .pipe(gulp.dest('dist/php'))
 
-    var buildImage = gulp.src('app/img/*') // Перенос img в продакшен
+    var buildImage = gulp.src('app/img/**/*') // Перенос img в продакшен
     .pipe(gulp.dest('dist/img'))
 
     var buildJs = gulp.src('app/js/**/*') // Перенос js в продакшен
