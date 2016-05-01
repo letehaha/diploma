@@ -422,7 +422,7 @@ section {
     text-align: center; }
     .work_descr .work-body .work-body-img img {
       display: inline-block;
-      width: 50%; }
+      width: 100%; }
 
 .form_wrapper-contact form {
   max-width: 600px;
