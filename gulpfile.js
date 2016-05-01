@@ -70,6 +70,7 @@ gulp.task('build',['clean', 'scss', 'scripts'], function() {
 
     var buildCss = gulp.src('app/css/**/*.css') // Перенос css в продакшен
     // .pipe(concat('styles.css')) // Объединение всех css в один файл
+    .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
 
     var buildFonts = gulp.src('app/fonts/**/*') // Перенос fonts в продакшен

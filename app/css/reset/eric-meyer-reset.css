@@ -16,7 +16,6 @@ figure, figcaption, footer,  hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
-	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -53,9 +52,14 @@ a{
 a,input{
 	outline: none;
 }
-html{
-	overflow: hidden; height: 100%;
-}
 :focus{
 	outline: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea, select{
+	width: 100%; 
+	box-sizing: border-box;
 }
