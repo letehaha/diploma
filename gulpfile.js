@@ -5,11 +5,13 @@ var gulp 		= require('gulp'),
     uglify      = require('gulp-uglifyjs'),
     cssnano     = require('gulp-cssnano'),
     rename      = require('gulp-rename'),
-    del         = require('del');
+    del         = require('del'),
+    autoprefixer= require('gulp-autoprefixer');
 
 gulp.task('scss', function(){
     return gulp.src('app/scss/main.scss')
         .pipe(scss())
+        .pipe(autoprefixer())
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}))
 });
