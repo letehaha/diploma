@@ -502,9 +502,32 @@ section{
 			width: 100%;
 			text-align: center;
 			img{
-			display: inline-block;
-			width: 100%;
+				display: inline-block;
+				width: 100%;
+			}
 		}
+	}
+	.work-footer{
+		display: flex;
+		justify-content: space-around;
+		margin-top: 20px;
+		a{
+			padding: 15px 30px;
+			background-color: #34CAC4;
+			width: 47%;
+			text-align: center;
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 150%;
+			border-radius: 10px;
+			display: inline-flex;
+    	justify-content: center;
+			i{
+				margin-left: 10px;
+				font-size: 1.5em;
+
+			}
 		}
 	}
 }

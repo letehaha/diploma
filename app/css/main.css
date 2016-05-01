@@ -465,6 +465,36 @@ section {
     .work_descr .work-body .work-body-img img {
       display: inline-block;
       width: 100%; }
+  .work_descr .work-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin-top: 20px; }
+    .work_descr .work-footer a {
+      padding: 15px 30px;
+      background-color: #34CAC4;
+      width: 47%;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 150%;
+      border-radius: 10px;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .work_descr .work-footer a i {
+        margin-left: 10px;
+        font-size: 1.5em; }
 
 .form_wrapper-contact form {
   max-width: 600px;
