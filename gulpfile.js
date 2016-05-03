@@ -6,7 +6,8 @@ var gulp 		= require('gulp'),
     cssnano     = require('gulp-cssnano'),
     rename      = require('gulp-rename'),
     del         = require('del'),
-    autoprefixer= require('gulp-autoprefixer');
+    autoprefixer= require('gulp-autoprefixer'),
+    htmlmin     = require('gulp-htmlmin');
 
 gulp.task('scss', function(){
     return gulp.src('app/scss/main.scss')
@@ -83,9 +84,11 @@ gulp.task('build',['clean', 'scss', 'scripts'], function() {
     .pipe(gulp.dest('dist/img'))
 
     var buildJs = gulp.src('app/js/**/*') // Перенос js в продакшен
+    // .pipe(cssnano())
     .pipe(gulp.dest('dist/js'))
 
     var buildHtml = gulp.src('app/*.html') // Перенос HTML в продакшен
+    .pipe(htmlmin())
     .pipe(gulp.dest('dist'));
 
 });

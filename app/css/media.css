@@ -30,6 +30,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.controls{
+		display: none;
+	}
 	.main_head{
 	    max-height: 600px;
 		background-image: url("../img/bg/bg-header(med).jpg");
@@ -86,6 +89,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 580px) {
+	.work_descr .work-footer a i{
+		display: none;
+	}
 	.main_head .top_intro_wrapper .top_intro_center h1{
 		font-size: 2.5em;
 		border: 6px solid #fff;

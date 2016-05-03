@@ -460,9 +460,11 @@ section{
 				background-color: transparent;
 				border: 1px solid $spec_color;
 				color: $spec_color;
-				padding: 5px 10px;
+				padding: 5px 20px;
 				display: inline-block;
 				transition: all .3s;
+				// text-transform: uppercase;
+				letter-spacing: 2px;
 				&:hover{
 					color: #fff;
 					background-color: $spec_color;
@@ -513,7 +515,7 @@ section{
 		margin-top: 20px;
 		a{
 			padding: 15px 30px;
-			background-color: #34CAC4;
+			background-color: $spec_color;
 			width: 47%;
 			text-align: center;
 			color: #fff;
@@ -522,11 +524,14 @@ section{
 			font-size: 150%;
 			border-radius: 10px;
 			display: inline-flex;
-    	justify-content: center;
+  			justify-content: center;
+  			transition: .3s ease-out;
 			i{
 				margin-left: 10px;
 				font-size: 1.5em;
-
+			}
+			&:hover{
+				background-color: #138A56;
 			}
 		}
 	}

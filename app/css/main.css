@@ -429,10 +429,11 @@ section {
         background-color: transparent;
         border: 1px solid #2fc989;
         color: #2fc989;
-        padding: 5px 10px;
+        padding: 5px 20px;
         display: inline-block;
         -webkit-transition: all .3s;
-        transition: all .3s; }
+        transition: all .3s;
+        letter-spacing: 2px; }
         .s_portfolio .portfolio_item .work_hover a:hover {
           color: #fff;
           background-color: #2fc989;
@@ -476,7 +477,7 @@ section {
     margin-top: 20px; }
     .work_descr .work-footer a {
       padding: 15px 30px;
-      background-color: #34CAC4;
+      background-color: #2fc989;
       width: 47%;
       text-align: center;
       color: #fff;
@@ -491,10 +492,14 @@ section {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      -webkit-transition: .3s ease-out;
+      transition: .3s ease-out; }
       .work_descr .work-footer a i {
         margin-left: 10px;
         font-size: 1.5em; }
+      .work_descr .work-footer a:hover {
+        background-color: #138A56; }
 
 .form_wrapper-contact form {
   max-width: 600px;
