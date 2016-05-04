@@ -60,6 +60,7 @@ gulp.task('css-libs', function() {
 gulp.task('watch', ['browser-sync', 'scss', 'scripts', 'css-libs'], function(){
 	gulp.watch('app/scss/**/*.scss', ['scss']);
 	gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/*.сss', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 

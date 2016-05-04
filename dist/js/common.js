@@ -113,20 +113,15 @@ $(function() {
 	//forms
 
 
-	$("#send").click(function() {
-		console.log('send');
+	$("#contact_form").submit(function() {
 		$.ajax({
 			type: "POST",
 			url: "../php/contact_form.php",
-			data: $('#contact_form').serialize(),
-			success: function(res){
-				var data = JSON.parse(res);
-				if(data.status == 'success'){
-					$(this).find("input").val("");
-					$("#contact_form").trigger("reset");
-				}
-				alert(data.text);
-			}
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Hello!");
+			$("#contact_form").trigger("reset");
 		});
 		return false;
 	});

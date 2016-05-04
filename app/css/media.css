@@ -14,13 +14,13 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	.intro_text-one, .intro_text-two, .some_text-three,
+	.intro_text-two, .some_text-three,
 	.skills_text-three{
 		display: none;
 	}
 	.about_wrapper .intro .about_photo{
 		float: none;
-		width: 50%;
+		width: 50%
 	}
 	.about_wrapper .intro .about_text{
 		width: 100%;
@@ -30,6 +30,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.skills_text-three{
+		display: block;
+	}
 	.controls{
 		display: none;
 	}
@@ -89,6 +92,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 580px) {
+	.about_photo{
+		width: 100%;
+		float: none;
+	}
 	.work_descr .work-footer a i{
 		display: none;
 	}
