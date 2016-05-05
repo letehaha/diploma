@@ -81,6 +81,9 @@ gulp.task('build',['clean', 'scss', 'scripts'], function() {
     var buildFonts = gulp.src('app/php/**/*') // Перенос php в продакшен
     .pipe(gulp.dest('dist/php'))
 
+    var buildLanguage = gulp.src('app/en/index.html')
+    .pipe(gulp.dest('dist/en'))
+    
     var buildImage = gulp.src('app/img/**/*') // Перенос img в продакшен
     .pipe(gulp.dest('dist/img'))
 

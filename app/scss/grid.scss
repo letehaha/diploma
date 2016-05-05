@@ -3,3 +3,16 @@
 	margin: 0 auto;
 	padding: 0 20px;
 }
+
+.group{
+	display: flex;
+	justify-content: space-between;
+}
+.left{
+	display: inline-block;
+	width: 48%;
+}
+.right{
+	display: inline-block;
+	width: 48%;
+}

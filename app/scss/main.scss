@@ -3,21 +3,10 @@
 
 body{
 	min-width: 320px;
-	font-family: 'Montserrat', 'Arial', sans-serif;
+	font-family: $OpenSans;
 }
 section{
 	padding: 70px 0;
-}
-
-.left{
-	float: left;
-	width: 45%;
-	margin-right: 5%;
-}
-.right{
-	float: right;
-	width: 45%;
-	margin-left: 5%;
 }
 
 @keyframes up-and-down {
@@ -71,9 +60,6 @@ section{
 	overflow: hidden;
 	text-align: center;
 	background-image: url("../img/bg/bg-header(lrg).jpg");
-}
-.row{
-  margin: 0;
 }
 .logo_container{
 	float: left;
@@ -325,6 +311,8 @@ section{
 				width: 45%;
 				img{
 					max-width: 200px;
+					width: 100%;
+    			height: 100%;
 					border-radius: 50%;
 				}
 			}
@@ -336,6 +324,7 @@ section{
 					margin-bottom: 10px;
 					font: 400 18px/30px $OpenSans;
 					color: $dark_text-color;
+					letter-spacing: 1px;
 				}
 				li:last-child{
 					margin-bottom: 0;
@@ -362,19 +351,38 @@ section{
 /////////// Section SKILLS
 
 .skills_wrapper{
-	padding: 20px 0 50px 0;
+	padding: 0 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column; // v 1.2
 }
-.intro{
-	text-align: left;
-}
-.skills_text{
-	font: 400 16px/26px $OpenSans;
-  color: $dark_text-color;
-	p:not(:last-child){
-		margin-bottom: 15px;
+// .skills_descr{
+// 	width: 48%;
+// 	font: 400 16px/26px $OpenSans;
+// 	color: $dark_text-color;
+// 	p:not(:last-child){
+// 		margin-bottom: 15px;
+// 	}
+// }
+//////////// v 1.2
+.skills_elem{ 
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	p{
+		width: 48%;
+		font: 400 16px/26px $OpenSans;
+		color: $dark_text-color;
 	}
 }
+.skills_elem:last-child{
+	margin-bottom: 0;
+}
+/////////// end v 1.2
 
+.skills_bars{
+	width: 48%;
+}
 .skillbar{
 	position:relative;
 	display:block;
@@ -382,15 +390,7 @@ section{
 	width:100%;
 	background:#eee;
 	height:25px;
-	-webkit-transition:0.4s linear;
-	-moz-transition:0.4s linear;
-	-ms-transition:0.4s linear;
-	-o-transition:0.4s linear;
 	transition:0.4s linear;
-	-webkit-transition-property:width, background-color;
-	-moz-transition-property:width, background-color;
-	-ms-transition-property:width, background-color;
-	-o-transition-property:width, background-color;
 	transition-property:width, background-color;
 	.skillbar-title{
 		position:absolute;
@@ -455,10 +455,15 @@ section{
 		margin-bottom: 50px;
 	}
 }
+.portfolio_wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
 .portfolio_item{
 	display: none;
+	width: 23%;
 	position: relative;
-	margin-bottom: 30px;
+	margin:0 1% 30px;
 	img{
 		width: 100%;
 	}
@@ -469,10 +474,9 @@ section{
 	.work_hover{
 		position: absolute;
 		top: 0;
-		left: 15px;
 		text-align: center;
 		background-color: rgba(0,0,0,.8);
-		width: calc(100% - 30px);
+		width: 100%;
 		height: 100%;
 		padding-top: 15%;
 		opacity: 0;
@@ -570,6 +574,8 @@ section{
 		}
 	}
 }
+
+/////////// Section CONTACT
 
 .form_wrapper-contact{
 	form{
@@ -730,16 +736,6 @@ section{
 			text-align: left;
 			color: #fff;
 			margin-bottom: 10px;
-		}
-		.group{
-			.left{
-				float: left;
-				width: 45%;
-			}
-			.right{
-				float: right;
-				width: 45%;
-			}
 		}
 		.input-email{
 			padding-bottom: 10px; 
