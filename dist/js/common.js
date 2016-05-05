@@ -53,12 +53,11 @@ $(function() {
 	
 
 	//sorting portfolio_item with MixItUp
-	$("#portfolio_box").mixItUp({
-		animation: {
-			duration: 650
-		}
-	});
-	
+	// $("#portfolio_box").mixItUp({
+	// 	animation: {
+	// 		duration: 650
+	// 	}
+	// });
 
 	//section WORKS, list items .active
 	$(".s_portfolio li").click(function() {

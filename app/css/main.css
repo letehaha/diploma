@@ -504,7 +504,6 @@ section {
           flex-wrap: wrap; }
 
 .portfolio_item {
-  display: none;
   width: 23%;
   position: relative;
   margin: 0 1% 30px; }
