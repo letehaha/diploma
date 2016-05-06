@@ -74,6 +74,7 @@ section{
 	top: 40px;
 	z-index: 200;
 	border: none;
+	cursor: pointer;
 	.burger{
 		position: absolute;
 		top:5px;
@@ -354,17 +355,8 @@ section{
 	padding: 0 50px;
 	display: flex;
 	justify-content: space-between;
-	flex-direction: column; // v 1.2
+	flex-direction: column;
 }
-// .skills_descr{
-// 	width: 48%;
-// 	font: 400 16px/26px $OpenSans;
-// 	color: $dark_text-color;
-// 	p:not(:last-child){
-// 		margin-bottom: 15px;
-// 	}
-// }
-//////////// v 1.2
 .skills_elem{ 
 	display: flex;
 	justify-content: space-between;
@@ -378,7 +370,6 @@ section{
 .skills_elem:last-child{
 	margin-bottom: 0;
 }
-/////////// end v 1.2
 
 .skills_bars{
 	width: 48%;
@@ -603,6 +594,7 @@ section{
 		.input-submit{
 			display: inline-block;
 			input[type="submit"]{
+				cursor: pointer;
 				margin-bottom: 0;
 				background: $spec_color;
 				border: none;
@@ -709,17 +701,25 @@ section{
 		}
 		input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     	color: rgba(255,255,255,.7);
+    	font-family: $OpenSans;
+    	font-weight: 300;
 		}
 		input:-moz-placeholder, textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    		color: rgba(255,255,255,.7);
+   		font-family: $OpenSans;
+   		font-weight: 300;
    		opacity: 1;
 		}
 		input::-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
    		color: rgba(255,255,255,.7);
+   		font-family: $OpenSans;
+   		font-weight: 300;
    		opacity: 1;
 		}
 		input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
    		color: rgba(255,255,255,.7);
+   		font-family: $OpenSans;
+   		font-weight: 300;
 		}
 		label{
 			padding: 0 0 5px 5px;
@@ -805,13 +805,14 @@ section{
 
 .ft-header{
 	color: $light_text-color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .ft-group-addr{
-	float: left;
-	height: 75px;
-	display: flex;
-	align-items: center;
 	margin-left: 30px;
+	display: inline-flex;
+	align-items: center;
 	color: #8c8c8c;
 	p{
 		font: 300 11px/16px $OpenSans;
@@ -821,7 +822,6 @@ section{
 	}
 }
 .ft-group-social{
-	float: right;
 	li{
 		float: left;
 		font-size: 1.5em;
@@ -864,9 +864,12 @@ section{
 	}
 }
 
+.ft-body{
+	display: flex;
+	justify-content: space-between;
+}
 .ft-section{
-	width: 33.3%;
-	float: left;
+	width: 32%;
 	padding: 30px;
 	display: block;
 	.title{
@@ -888,6 +891,7 @@ section{
 	input{
 		background: none;
 		font-size: 12px;
+		color: #fff;
 		&[type="email"]{
 			padding: 10px;
 			margin-bottom: 20px;
@@ -901,6 +905,7 @@ section{
 			padding: 10px 30px;
 			border: 2px solid rgba(255,255,255, 1);
 			transition: all .3s;
+			cursor: pointer;
 			&:hover{
 				background-color: #fff;
 				color: black;

@@ -47,8 +47,8 @@ gulp.task('scripts', function() {
 gulp.task('css-libs', function() {
     return gulp.src([ // Выбор всех css-файлов для минификации
     	'app/libs/animate/animate.min.css',
-    	'app/libs/bootstrap/bootstrap-grid.min.css',
     	'app/libs/font-awesome/font-awesome.min.css',
+        // 'app/libs/bootstrap/bootstrap-grid.min.css',
     	'app/libs/magnific-popup/magnific-popup.min.css'
     	]) 
     	.pipe(concat('libs.min.css'))
