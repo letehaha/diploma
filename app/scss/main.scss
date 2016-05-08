@@ -74,7 +74,6 @@ section{
 	top: 40px;
 	z-index: 200;
 	border: none;
-	cursor: pointer;
 	.burger{
 		position: absolute;
 		top:5px;
@@ -304,16 +303,15 @@ section{
 				height: 100%;
 				background-color: #333333;
 				top: 0;
-				left: 50%;
+				left: 48%;
 			}
 			.about_img{
 				display: flex;
 				justify-content: flex-end;
 				width: 45%;
 				img{
-					max-width: 200px;
 					width: 100%;
-    			height: 100%;
+					height: 100%;
 					border-radius: 50%;
 				}
 			}
@@ -435,7 +433,6 @@ section{
 		font: 300 12px/24px $OpenSans;
 		letter-spacing: .2em;
 		margin: 0 10px;
-		cursor: pointer;
 		color: #555;
 		&.active{
 			color: #fff;
@@ -451,7 +448,6 @@ section{
 	flex-wrap: wrap;
 }
 .portfolio_item{
-	// display: none;
 	width: 23%;
 	position: relative;
 	margin:0 1% 30px;
@@ -468,7 +464,7 @@ section{
 		text-align: center;
 		background-color: rgba(0,0,0,.8);
 		width: 100%;
-		height: 100%;
+		height: calc(100% - 3px);
 		padding-top: 15%;
 		opacity: 0;
 		transition: all .6s;
@@ -594,7 +590,6 @@ section{
 		.input-submit{
 			display: inline-block;
 			input[type="submit"]{
-				cursor: pointer;
 				margin-bottom: 0;
 				background: $spec_color;
 				border: none;
@@ -905,7 +900,6 @@ section{
 			padding: 10px 30px;
 			border: 2px solid rgba(255,255,255, 1);
 			transition: all .3s;
-			cursor: pointer;
 			&:hover{
 				background-color: #fff;
 				color: black;

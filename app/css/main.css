@@ -119,8 +119,7 @@ section {
   right: 40px;
   top: 40px;
   z-index: 200;
-  border: none;
-  cursor: pointer; }
+  border: none; }
   .toggle_menu .burger {
     position: absolute;
     top: 5px;
@@ -354,7 +353,7 @@ section {
         height: 100%;
         background-color: #333333;
         top: 0;
-        left: 50%; }
+        left: 48%; }
       .about_wrapper__left .about_main .about_img {
         display: -webkit-box;
         display: -webkit-flex;
@@ -366,7 +365,6 @@ section {
                 justify-content: flex-end;
         width: 45%; }
         .about_wrapper__left .about_main .about_img img {
-          max-width: 200px;
           width: 100%;
           height: 100%;
           border-radius: 50%; }
@@ -487,7 +485,6 @@ section {
     font: 300 12px/24px "Open Sans", "Arial", sans-serif;
     letter-spacing: .2em;
     margin: 0 10px;
-    cursor: pointer;
     color: #555; }
     .s_portfolio li.active {
       color: #fff;
@@ -519,7 +516,7 @@ section {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
-    height: 100%;
+    height: calc(100% - 3px);
     padding-top: 15%;
     opacity: 0;
     -webkit-transition: all .6s;
@@ -637,7 +634,6 @@ section {
   .form_wrapper-contact form .input-submit {
     display: inline-block; }
     .form_wrapper-contact form .input-submit input[type="submit"] {
-      cursor: pointer;
       margin-bottom: 0;
       background: #2fc989;
       border: none;
@@ -943,8 +939,7 @@ section {
       padding: 10px 30px;
       border: 2px solid white;
       -webkit-transition: all .3s;
-      transition: all .3s;
-      cursor: pointer; }
+      transition: all .3s; }
       .ft-section input[type="submit"]:hover {
         background-color: #fff;
         color: black; }

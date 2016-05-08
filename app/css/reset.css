@@ -49,6 +49,7 @@ table {
 }
 a{
 	text-decoration: none;
+	cursor: pointer;
 }
 a,input{
 	outline: none;
@@ -63,4 +64,12 @@ input[type="url"],
 textarea, select{
 	width: 100%; 
 	box-sizing: border-box;
+	overflow: hidden;
+}
+input[type="submit"], button{
+	cursor: pointer;
+}
+//delete arrow IE
+select::-ms-expand {
+  display: none;
 }
