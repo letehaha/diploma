@@ -9,7 +9,7 @@ var gulp 		= require('gulp'),
     autoprefixer= require('gulp-autoprefixer'),
     htmlmin     = require('gulp-htmlmin'),
     ignore      = require('gulp-ignore'),
-    jsmin 		= require('gulp-jsmin');
+    uncss 		= require('gulp-uncss');
 
 gulp.task('scss', function(){
     return gulp.src('app/scss/main.scss')
@@ -74,6 +74,9 @@ gulp.task('build',['clean', 'scss', 'scripts'], function() {
 
     var buildCss = gulp.src('app/css/**/*.css') // Перенос css в продакшен
     // .pipe(concat('styles.css')) // Объединение всех css в один файл
+    // .pipe(uncss({
+    //     html:['index.html']
+    // }))
     .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
 
