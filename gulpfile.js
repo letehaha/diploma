@@ -8,7 +8,8 @@ var gulp 		= require('gulp'),
     del         = require('del'),
     autoprefixer= require('gulp-autoprefixer'),
     htmlmin     = require('gulp-htmlmin'),
-    ignore      = require('gulp-ignore');
+    ignore      = require('gulp-ignore'),
+    jsmin 		= require('gulp-jsmin');
 
 gulp.task('scss', function(){
     return gulp.src('app/scss/main.scss')
@@ -89,11 +90,10 @@ gulp.task('build',['clean', 'scss', 'scripts'], function() {
     .pipe(gulp.dest('dist/img'))
 
     var buildJs = gulp.src('app/js/**/*') // Перенос js в продакшен
-    // .pipe(cssnano())
     .pipe(gulp.dest('dist/js'))
 
     var buildHtml = gulp.src('app/*.html') // Перенос HTML в продакшен
-    .pipe(htmlmin())
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist'));
 
 });

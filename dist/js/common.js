@@ -50,14 +50,6 @@ $(function() {
 		$(".top_menu").fadeOut(600);
 		$(".burger").toggleClass("active");
 	});
-	
-
-	//sorting portfolio_item with MixItUp
-	// $("#portfolio_box").mixItUp({
-	// 	animation: {
-	// 		duration: 650
-	// 	}
-	// });
 
 	//section WORKS, list items .active
 	$(".s_portfolio li").click(function() {
@@ -82,18 +74,6 @@ $(function() {
 			$(".contact-message").fadeIn(600);
 		};
 	});
-
-
-
-	//media hidden portfolio_items
-	function checkPosition(){
-	    if($(window).width() < 768)
-	    {
-	        $(".portfolio_item_5, .portfolio_item_6, .portfolio_item_7, .portfolio_item_8").addClass("hidden");
-	    } else {
-	        $(".portfolio_item_5, .portfolio_item_6, .portfolio_item_7, .portfolio_item_8").removeClass("hidden");
-	    };
-	};
 
 	//Анимация загрузки значений скиллбара
 	jQuery('.skillbar').each(function(){
