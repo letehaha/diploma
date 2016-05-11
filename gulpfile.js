@@ -1,6 +1,6 @@
-var gulp 	= require('gulp'),
+var gulp 		= require('gulp'),
     browserSync = require('browser-sync'),
-    scss 	= require('gulp-scss'),
+    scss 		= require('gulp-scss'),
     concat      = require('gulp-concat'),
     uglify      = require('gulp-uglifyjs'),
     cssnano     = require('gulp-cssnano'),
@@ -9,7 +9,8 @@ var gulp 	= require('gulp'),
     autoprefixer= require('gulp-autoprefixer'),
     htmlmin     = require('gulp-htmlmin'),
     ignore      = require('gulp-ignore'),
-    uncss 	= require('gulp-uncss');
+    uncss 		= require('gulp-uncss'),
+    imagemin 	= require('gulp-imagemin');
 
 gulp.task('scss', function(){
     return gulp.src('app/scss/main.scss')
@@ -90,6 +91,7 @@ gulp.task('build',['clean', 'scss', 'scripts'], function() {
     .pipe(gulp.dest('dist/en'))
     
     var buildImage = gulp.src(['app/img/**/*', '!./app/img/bg/bg-header.jpg']) // Dest img in production
+    .pipe(imagemin())
     .pipe(gulp.dest('dist/img'))
 
     var buildJs = gulp.src('app/js/**/*') // Dest js in production
