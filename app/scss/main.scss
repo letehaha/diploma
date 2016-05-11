@@ -434,6 +434,7 @@ section{
 		letter-spacing: .2em;
 		margin: 0 10px;
 		color: #555;
+		cursor: pointer;
 		&.active{
 			color: #fff;
 			border-bottom: $spec_color 1px solid;
@@ -573,6 +574,7 @@ section{
 		input, textarea{
 			margin-bottom: 1.5em;
 			padding: 10px;
+			line-height: 20px;
 		}
 		label{
 			padding: 0 0 5px 5px;
@@ -617,6 +619,24 @@ section{
 				font-size: 12px;
 			}
 		}
+	}
+	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  	font-family: $OpenSans;
+  	font-weight: 300;
+	}
+	input:-moz-placeholder, textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ 		font-family: $OpenSans;
+ 		font-weight: 300;
+ 		opacity: 1;
+	}
+	input::-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+ 		font-family: $OpenSans;
+ 		font-weight: 300;
+ 		opacity: 1;
+	}
+	input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ 		font-family: $OpenSans;
+ 		font-weight: 300;
 	}
 }
 
@@ -670,6 +690,7 @@ section{
 		input, textarea{
 			margin-bottom: 1.5em;
 			padding: 10px;
+			line-height: 20px;
 		}
 		input{
 			background:rgba(35, 152, 104,1.0);
@@ -688,6 +709,7 @@ section{
 				-moz-appearance: none;
 				appearance: none;
 				padding: 10px;
+				line-height: 20px;
 			option{
 				border: inherit;
 				color: inherit;

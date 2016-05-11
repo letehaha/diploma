@@ -98,8 +98,7 @@ $(function() {
 			url: "../php/contact_form.php",
 			data: $(this).serialize()
 		}).done(function() {
-			$(this).find("input").val("");
-			alert("Hello!");
+			// $(this).find("input").val("");
 			$("#contact_form").trigger("reset");
 		});
 		return false;
@@ -111,10 +110,10 @@ $(function() {
 			url: "../php/contact_form-message.php",
 			data: $(this).serialize()
 		}).done(function() {
-			$(this).find("input").val("");
-			alert("Hello!");
+			// $(this).find("input").val("");
 			$("#contact_form-message").trigger("reset");
 		});
 		return false;
 	});
+
 });

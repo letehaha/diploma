@@ -12,5 +12,9 @@
 
    $pagetitle = $sitename;
    mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
-   
+   if(mail()){
+   	echo "Your mail has been sent";
+   } else{
+   	echo "You loser";
+   }
 ?>

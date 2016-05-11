@@ -485,7 +485,8 @@ section {
     font: 300 12px/24px "Open Sans", "Arial", sans-serif;
     letter-spacing: .2em;
     margin: 0 10px;
-    color: #555; }
+    color: #555;
+    cursor: pointer; }
     .s_portfolio li.active {
       color: #fff;
       border-bottom: #2fc989 1px solid; }
@@ -620,7 +621,8 @@ section {
   text-align: center; }
   .form_wrapper-contact form input, .form_wrapper-contact form textarea {
     margin-bottom: 1.5em;
-    padding: 10px; }
+    padding: 10px;
+    line-height: 20px; }
   .form_wrapper-contact form label {
     padding: 0 0 5px 5px;
     text-align: left;
@@ -656,6 +658,24 @@ section {
       padding: 0;
       margin-bottom: 20px;
       font-size: 12px; }
+.form_wrapper-contact input::-webkit-input-placeholder, .form_wrapper-contact textarea::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300; }
+.form_wrapper-contact input:-moz-placeholder, .form_wrapper-contact textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+.form_wrapper-contact input::-moz-placeholder, .form_wrapper-contact textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  opacity: 1; }
+.form_wrapper-contact input:-ms-input-placeholder, .form_wrapper-contact textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300; }
 
 .link_contact {
   margin: 0;
@@ -707,7 +727,8 @@ section {
   text-align: center; }
   .form_wrapper form input, .form_wrapper form textarea {
     margin-bottom: 1.5em;
-    padding: 10px; }
+    padding: 10px;
+    line-height: 20px; }
   .form_wrapper form input {
     background: #239868;
     border: none; }
@@ -722,7 +743,8 @@ section {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    padding: 10px; }
+    padding: 10px;
+    line-height: 20px; }
     .form_wrapper form select option {
       border: inherit;
       color: inherit;
