@@ -88,7 +88,7 @@ gulp.task('build',['clean', 'scss', 'scripts'], function() {
     .pipe(gulp.dest('dist/php'))
 
     var buildLanguage = gulp.src('app/ru/**/*')
-    .pipe(gulp.dest('dist/en'))
+    .pipe(gulp.dest('dist/ru'))
     
     var buildImage = gulp.src(['app/img/**/*', '!./app/img/bg/bg-header.jpg']) // Dest img in production
     .pipe(imagemin())
