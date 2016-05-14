@@ -16,9 +16,6 @@
 	.portfolio_item:nth-child(8){
 		display: none !important;
 	}
-	.portfolio_item .work_hover{
-		height: calc(100% - 2px);
-	}
 }
 
 @media only screen and (max-width : 992px) {

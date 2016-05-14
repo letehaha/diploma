@@ -454,6 +454,7 @@ section{
 	margin:0 1% 30px;
 	img{
 		width: 100%;
+		display: block;
 	}
 	&:hover .work_hover{
 		opacity: 1;
@@ -465,7 +466,7 @@ section{
 		text-align: center;
 		background-color: rgba(0,0,0,.8);
 		width: 100%;
-		height: calc(100% - 3px);
+		height: 100%;
 		padding-top: 15%;
 		opacity: 0;
 		transition: all .6s;
