@@ -36,6 +36,7 @@
     "gulp-spritesmith": "0.0.2",
     "gulp-uglifyjs": "^0.6.2",
     "gulp-uncss": "^1.0.5",
+    "jump.js": "^0.4.0",
     "validator": "^5.2.0"
   }
 }
