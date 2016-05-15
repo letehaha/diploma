@@ -38,7 +38,7 @@ gulp.task('scripts', function() {
         'app/libs/mixitup/mixitup.min.js', // mixitup
         'app/libs/parallax/parallax.min.js', // parallax
         'app/libs/respond/respond.min.js', // respond
-        'app/libs/jquerySmoothScroll/jquerySmoothScroll.min.js', // jquerySmoothScroll
+        'app/libs/scroll2id/PageScroll2id.min.js', // PageScroll2id
         'app/libs/waypoints/waypoints.min.js' // waypoints
         ])
         .pipe(concat('libs.min.js')) // Concat in a new file libs.min.js
