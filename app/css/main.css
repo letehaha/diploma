@@ -322,7 +322,7 @@ section {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 50px; }
+  padding: 0 50px 50px; }
   .about_wrapper__left {
     width: 48%; }
     .about_wrapper__left p {
@@ -388,10 +388,10 @@ section {
   .about_wrapper__right {
     width: 48%; }
     .about_wrapper__right p {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       font: 400 16px/26px "Open Sans", "Arial", sans-serif;
       color: #292f36;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
       border-bottom: 1px solid #ccc; }
     .about_wrapper__right p:last-child {
       margin-bottom: 0;
@@ -727,7 +727,7 @@ section {
   margin: 0 auto;
   text-align: center; }
   .form_wrapper form input, .form_wrapper form textarea {
-    margin-bottom: 1.5em;
+    margin-bottom: 20px;
     padding: 10px;
     line-height: 20px; }
   .form_wrapper form input {
@@ -745,7 +745,8 @@ section {
     -moz-appearance: none;
     appearance: none;
     padding: 10px;
-    line-height: 20px; }
+    line-height: 20px;
+    margin-bottom: 20px; }
     .form_wrapper form select option {
       border: inherit;
       color: inherit;
@@ -784,7 +785,7 @@ section {
     display: block;
     text-align: left;
     color: #fff;
-    margin-bottom: 10px; }
+    margin-bottom: 20px; }
   .form_wrapper form .input-email {
     padding-bottom: 10px; }
   .form_wrapper form .input-submit {

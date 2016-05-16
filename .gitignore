@@ -3,3 +3,4 @@ node_modules
 .gulp-scss-cache
 .sass-cache
 gulp_tasks.txt
+.domains

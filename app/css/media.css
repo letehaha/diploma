@@ -16,6 +16,12 @@
 	.portfolio_item:nth-child(8){
 		display: none !important;
 	}
+	.about_wrapper__right p:last-child{
+		display: none;
+	}
+	.about_wrapper__right p:nth-child(3){
+		border-bottom: 0;
+	}
 }
 
 @media only screen and (max-width : 992px) {

@@ -279,7 +279,7 @@ section{
 .about_wrapper{
 	display: flex;
 	justify-content: space-between;
-	padding: 0 50px;
+	padding:0 50px 50px;
 	&__left{
 		width: 48%;
 		p{
@@ -334,10 +334,10 @@ section{
 	&__right{
 		width: 48%;
 		p{
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 			font: 400 16px/26px $OpenSans;
 			color: $dark_text-color;
-			padding-bottom: 30px;
+			padding-bottom: 20px;
 			border-bottom: 1px solid #ccc;
 		}
 		p:last-child{
@@ -689,7 +689,7 @@ section{
 		margin: 0 auto;
 		text-align: center;
 		input, textarea{
-			margin-bottom: 1.5em;
+			margin-bottom: 20px;
 			padding: 10px;
 			line-height: 20px;
 		}
@@ -711,6 +711,7 @@ section{
 				appearance: none;
 				padding: 10px;
 				line-height: 20px;
+				margin-bottom: 20px;
 			option{
 				border: inherit;
 				color: inherit;
@@ -753,7 +754,7 @@ section{
 			display: block;
 			text-align: left;
 			color: #fff;
-			margin-bottom: 10px;
+			margin-bottom: 20px;
 		}
 		.input-email{
 			padding-bottom: 10px; 
