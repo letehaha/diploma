@@ -36,6 +36,9 @@
   display: inline-block;
   width: 48%; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   min-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif; }

@@ -65,12 +65,14 @@ $(function() {
 
 	//Scroll to id
 	$("a[href*='#']").mPageScroll2id();
+	// $("a[href*='#']").smoothScroll({speed: 1000});
 
 	//enable/disable contact-message
 	$(".link_contact-message, .close-button").click(function(){
 		if ($(".contact-message").is(":visible")){
 			$(".contact-message").fadeOut(600);
 		} else{
+			// $(this).smoothScroll({speed: 1000});
 			$(".contact-message").fadeIn(600);
 		};
 	});

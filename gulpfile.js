@@ -46,7 +46,6 @@ gulp.task('css-libs', function() {
     return gulp.src([ // Take all the css files and minify
     	'app/libs/animate/animate.min.css',
     	'app/libs/font-awesome/font-awesome.min.css',
-        // 'app/libs/bootstrap/bootstrap-grid.min.css',
     	'app/libs/magnific-popup/magnific-popup.min.css'
     	]) 
     	.pipe(concat('libs.min.css')) // Concat the new file libs.min.css

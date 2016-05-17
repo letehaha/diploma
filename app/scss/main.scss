@@ -1,5 +1,8 @@
 @import "variable.scss";
 @import "grid.scss";
+html {
+  scroll-behavior: smooth;
+}
 
 body{
 	min-width: 320px;
