@@ -187,6 +187,9 @@
 	.ft-section{
 		width: 50%;
 	}
+	.work-footer a i{
+		display: none;
+	}
 }
 
 @media only screen and (max-width : 480px) {
