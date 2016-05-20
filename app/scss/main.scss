@@ -8,6 +8,26 @@ body{
 	min-width: 320px;
 	font-family: $OpenSans;
 }
+
+/////// STYLE SCROLLBAR
+
+::-webkit-scrollbar-track
+{
+	border: 1px solid inherit;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: rgba(25,25,25,.8);	
+}
+
+///////////////////////////
+
 section{
 	padding: 70px 0;
 }

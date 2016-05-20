@@ -68,10 +68,6 @@ gulp.task('clean', function() {
 gulp.task('build',['clean', 'scss', 'scripts'], function() {
 
     var buildCss = gulp.src('app/css/**/*.css') // Dest css in production
-    // .pipe(concat('styles.css')) // Concat all the css files
-    // .pipe(uncss({
-    //     html:['index.html']
-    // }))
     .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
 

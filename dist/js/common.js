@@ -65,7 +65,6 @@ $(function() {
 
 	//Scroll to id
 	$("a[href*='#']").mPageScroll2id();
-	// $("a[href*='#']").smoothScroll({speed: 1000});
 
 	//enable/disable contact-message
 	$(".link_contact-message, .close-button").click(function(){
