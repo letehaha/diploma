@@ -65,7 +65,7 @@ $(function() {
 
 
 	//Scroll to id
-	$("a[href*='#']").mPageScroll2id();
+	$("a[href='#page_home'], a[href='#page_about'], a[href='#page_works'], a[href='#page_contact']").mPageScroll2id();
 
 	//enable/disable contact-message
 	$(".link_contact-message, .close-button").click(function(){
