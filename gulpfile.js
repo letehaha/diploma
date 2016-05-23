@@ -35,7 +35,7 @@ gulp.task('scripts', function() {
         'app/libs/animate/animate-css.js', // Animate
         'app/libs/magnific-popup/magnificPopup.min.js', // magnificPopup
         'app/libs/scroll2id/PageScroll2id.min.js', // PageScroll2id
-        'app/libs/jquery_lazyload/jquery.lazyload.min.js'
+        'app/libs/lazysizes/lazysizes.min.js'
         ])
         .pipe(concat('libs.min.js')) // Concat in a new file libs.min.js
         .pipe(uglify()) // Compress

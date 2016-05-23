@@ -31,9 +31,9 @@ $(function() {
 
 
 
-	$("img.lazy").lazyload({
-		threshold : 300
-	});
+	// $("img.lazy").lazyload({
+	// 	threshold : 300
+	// });
 
 	// transform header-text
 	$(window).scroll(function() {
