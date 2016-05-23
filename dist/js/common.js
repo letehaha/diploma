@@ -20,19 +20,20 @@ $(function() {
 	$(".toggle_menu").click(function(){
 		if ($(".top_menu").is(":visible")){
 			$(".top_menu").fadeOut(600);
-	//Анимация появления элементов в меню
 			$(".top_menu li a").removeClass("fadeInUp animated");
-	//Затемнение текста в хедере при вызове меню
 			$(".top_intro_center").removeClass("it_opacity");
 		} else{
 			$(".top_menu").fadeIn(600);
-	//Анимация появления элементов в меню
 			$(".top_menu li a").addClass("fadeInUp animated");
-	//Затемнение текста в хедере при вызове меню
 			$(".top_intro_center").addClass("it_opacity");
 		};
 	});
 
+
+
+	$("img.lazy").lazyload({
+		threshold : 300
+	});
 
 	// transform header-text
 	$(window).scroll(function() {
@@ -71,19 +72,18 @@ $(function() {
 		if ($(".contact-message").is(":visible")){
 			$(".contact-message").fadeOut(600);
 		} else{
-			// $(this).smoothScroll({speed: 1000});
 			$(".contact-message").fadeIn(600);
 		};
 	});
 
-	//Анимация загрузки значений скиллбара
+	//Animation load scrollbar
 	jQuery('.skillbar').each(function(){
 		jQuery(this).find('.skillbar-bar').animate({
 			width:jQuery(this).attr('data-percent')
 		},2000);
 	});
 
-	//Добавление Таргета к ссылкам на внешние ресурсы
+	//Add target on link
 	var root = location.protocol + '//' + location.host;
 	$('a').not(':contains(root)').click(function(){
 	    this.target = "_blank";

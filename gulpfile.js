@@ -34,7 +34,8 @@ gulp.task('scripts', function() {
         'app/libs/jquery/dist/jquery.min.js', // jQuery
         'app/libs/animate/animate-css.js', // Animate
         'app/libs/magnific-popup/magnificPopup.min.js', // magnificPopup
-        'app/libs/scroll2id/PageScroll2id.min.js' // PageScroll2id
+        'app/libs/scroll2id/PageScroll2id.min.js', // PageScroll2id
+        'app/libs/jquery_lazyload/jquery.lazyload.min.js'
         ])
         .pipe(concat('libs.min.js')) // Concat in a new file libs.min.js
         .pipe(uglify()) // Compress
@@ -53,6 +54,17 @@ gulp.task('css-libs', function() {
         .pipe(gulp.dest('app/css')); // Dest in app/css
 });
 
+gulp.task('css-files', function() {
+    return gulp.src([ // Take all the css files and minify
+        'app/css/reset.css',
+        'app/css/main.css',
+        'app/css/media.css',
+        'app/css/libs.min.css'
+        ])
+        .pipe(concat('style.min.css')) // Concat the new file libs.min.css
+        .pipe(cssnano()) // Compress
+        .pipe(gulp.dest('app/css')); // Dest in app/css
+});
 
 gulp.task('watch', ['browser-sync', 'scss', 'scripts', 'css-libs'], function(){
 	gulp.watch('app/scss/**/*.scss', ['scss']);
@@ -67,11 +79,12 @@ gulp.task('clean', function() {
 
 gulp.task('build',['clean', 'scss', 'scripts'], function() {
 
-    var buildCss = gulp.src('app/css/**/*.css') // Dest css in production
+    var buildCss = gulp.src('app/css/style.min.css') // Dest css in production
     .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
 
     var buildFonts = gulp.src('app/fonts/**/*') // Dest fonts in production
+    // .pipe(cssnano('app/fonts/fonts.css'))
     .pipe(gulp.dest('dist/fonts'))
 
     var buildFonts = gulp.src('app/php/**/*') // Dest php in production
