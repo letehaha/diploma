@@ -29,12 +29,6 @@ $(function() {
 		};
 	});
 
-
-
-	// $("img.lazy").lazyload({
-	// 	threshold : 300
-	// });
-
 	// transform header-text
 	$(window).scroll(function() {
 
@@ -65,7 +59,7 @@ $(function() {
 
 
 	//Scroll to id
-	$("a[href='#page_home'], a[href='#page_about'], a[href='#page_works'], a[href='#page_contact']").mPageScroll2id();
+	$("a[href='#home'], a[href='#about'], a[href='#works'], a[href='#contact'], a[href='#contact_message']").mPageScroll2id();
 
 	//enable/disable contact-message
 	$(".link_contact-message, .close-button").click(function(){
