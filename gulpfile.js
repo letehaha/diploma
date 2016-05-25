@@ -1,6 +1,6 @@
 var gulp 		= require('gulp'),
     browserSync = require('browser-sync'),
-    scss 		= require('gulp-scss'),
+    sass 		= require('gulp-sass'),
     concat      = require('gulp-concat'),
     uglify      = require('gulp-uglifyjs'),
     cssnano     = require('gulp-cssnano'),
@@ -9,15 +9,14 @@ var gulp 		= require('gulp'),
     autoprefixer= require('gulp-autoprefixer'),
     htmlmin     = require('gulp-htmlmin'),
     ignore      = require('gulp-ignore'),
-    uncss 		= require('gulp-uncss'),
     imagemin 	= require('gulp-imagemin');
 
-gulp.task('scss', function(){
-    return gulp.src('app/scss/main.scss')
-        .pipe(scss())
-        .pipe(autoprefixer())
-        .pipe(gulp.dest('app/css'))
-        .pipe(browserSync.reload({stream: true}))
+gulp.task('sass', function(){
+	return gulp.src('app/scss/main.scss')
+		.pipe(sass())
+		.pipe(autoprefixer())
+		.pipe(gulp.dest('app/css'))
+		.pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('browser-sync', function(){
@@ -66,8 +65,8 @@ gulp.task('css-files', function() {
         .pipe(gulp.dest('app/css')); // Dest in app/css
 });
 
-gulp.task('watch', ['browser-sync', 'scss', 'scripts', 'css-libs'], function(){
-	gulp.watch('app/scss/**/*.scss', ['scss']);
+gulp.task('watch', ['browser-sync', 'sass', 'scripts', 'css-libs'], function(){
+	gulp.watch('app/scss/**/*.scss', ['sass']);
 	gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/*.сss', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
@@ -77,14 +76,13 @@ gulp.task('clean', function() {
     return del.sync('dist'); // Delete folder dist before build
 });
 
-gulp.task('build',['clean', 'scss', 'scripts'], function() {
+gulp.task('build', ["clean","scripts","sass"], function() {
 
     var buildCss = gulp.src('app/css/style.min.css') // Dest css in production
     .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
 
     var buildFonts = gulp.src('app/fonts/**/*') // Dest fonts in production
-    // .pipe(cssnano('app/fonts/fonts.css'))
     .pipe(gulp.dest('dist/fonts'))
 
     var buildFonts = gulp.src('app/php/**/*') // Dest php in production
