@@ -953,3 +953,10 @@ section {
   .ft-footer p, .ft-footer a {
     font: 300 11px/16px "Open Sans", "Arial", sans-serif;
     color: #6b6b6b; }
+  .ft-footer a {
+    border-bottom: 1px solid #6b6b6b;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out; }
+    .ft-footer a:hover {
+      color: #2fc989;
+      border-bottom: 1px solid transparent; }

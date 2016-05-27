@@ -76,7 +76,7 @@ gulp.task('clean', function() {
     return del.sync('dist'); // Delete folder dist before build
 });
 
-gulp.task('build', ["clean","scripts","sass"], function() {
+gulp.task('build', ["clean","scripts","sass", "css-files"], function() {
 
     var buildCss = gulp.src('app/css/style.min.css') // Dest css in production
     .pipe(cssnano())

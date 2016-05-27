@@ -960,4 +960,12 @@ section{
 		font: 300 11px/16px $OpenSans;
 		color: #6b6b6b;
 	}
+	a{
+		border-bottom: 1px solid #6b6b6b;
+		transition: .3s ease-out;
+		&:hover{
+			color: $spec_color;
+			border-bottom: 1px solid rgba(0,0,0,0);
+		}
+	}
 }
