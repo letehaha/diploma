@@ -1,8 +1,8 @@
 {
-  "name": "diplomagulp",
+  "name": "diploma",
   "version": "1.0.0",
-  "description": "gulp for diploma project",
-  "main": "index.js",
+  "description": "diploma with gulp",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,11 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/letehaha/diplomaGulp.git"
   },
-  "keywords": [
-    "diploma",
-    "gulp",
-    "first"
-  ],
   "author": "Dmitry Sviridenko",
   "license": "ISC",
   "bugs": {
@@ -22,7 +17,7 @@
   },
   "homepage": "https://github.com/letehaha/diplomaGulp#readme",
   "devDependencies": {
-    "browser-sync": "^2.12.10",
+    "browser-sync": "^2.13.0",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
@@ -34,8 +29,5 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
     "gulp-uglifyjs": "^0.6.2"
-  },
-  "dependencies": {
-    "critical": "^0.7.2"
   }
 }
