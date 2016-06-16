@@ -1,7 +1,7 @@
 <?php
 
    $recepient = "letehaha@gmail.com";
-   $sitename = "xine.co.nf";
+   $sitename = "sviriden.co";
 
    $fname = trim($_POST["first_name"]);
    $sname = trim($_POST["second_name"]);
@@ -17,5 +17,4 @@
 
    $pagetitle = $sitename;
    mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
-
 ?>

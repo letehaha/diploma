@@ -44,7 +44,7 @@ table {
 body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
-    background: rgba(0,0,0,.9);
+    background: rgb(220,220,220);
 }
 
 b, strong { font-weight: bold }
@@ -89,7 +89,7 @@ i, em { font-style: italic }
 }
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.1;
+    opacity: 1;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -98,16 +98,20 @@ i, em { font-style: italic }
     transition:         opacity 1s;
 }
 
+.step_text{
+    opacity: 1;
+}
+
 .impress-enabled .step.active { opacity: 1 }
 .slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1200px;
-    height: 700px;
+    display: block;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    width: 1460px;
+    height: 800px;
     padding: 40px 60px;
-    color: #fff;
-    background: rgba(0,0,0,.2);
+    color: #111;
+    background: rgb(250,250,250);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 30px;
@@ -115,6 +119,158 @@ i, em { font-style: italic }
     letter-spacing: -1px;
     position: relative;
 }
-h1{
-    font-size: 3em;
+.slide_text{
+    width: 600px;
+    height: 400px;
+    background-color: red;
+}
+.slide_last{
+    opacity: 0;
+    background: rgba(0,0,0,0);
+}
+.first_title{
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #111;
+    font: 300 20px/40px 'Montserrat', sans-serif;
+}
+.first_main{
+    margin-top: 150px;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+}
+.first_descr{
+    margin-top: 150px;
+    display: block;
+    width: 50%;
+    margin-left: 50%;
+    text-align: left;
+}
+.first_descr_elem{
+    display: block;
+    font: 300 26px/48px 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+.slides_quest{
+    display: inline-block;
+    font-size: 1.5em;
+    padding:5px 20px 20px 5px;
+    margin: 40px 0 50px 20px;
+    border-bottom: 2px solid rgb(47, 201, 137);
+    border-right: 2px solid rgb(47, 201, 137);
+}
+.second_descr{
+    margin: 50px 200px 20px 50px;
+    font: 300 0.9em/1.7 'Montserrat', sans-serif;
+}
+.three_descr{
+    margin: 50px 100px 0 50px;
+    font-size: 0.8em;
+    line-height: 1.7;
+}
+.three_descr span{
+    border-bottom: 2px solid rgb(47, 201, 137);
+}
+.three_list{
+    margin: 30px 0 0 70px;
+}
+.three_list li{
+    font-size: 0.8em;
+    margin-top: 10px;
+    list-style-type: none;
+    position: relative;
+    display: inline-block;
+    width: 45%;
+}
+.three_list li:after{
+    content: '–';
+    position: absolute;
+    left: -20px;
+}
+.three_des_list{
+    margin: 50px 100px 0 50px;
+    font-size: 1em;
+}
+.four_img{
+    width: 100%;
+    margin-top: -20px;
+}
+.four_img img{
+    display: block;
+    margin: 0 auto;
+}
+.fife_cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left:50px; 
+}
+.fife_cont_elem{
+    height: 300px;
+}
+.fife_cont_elem_left{
+    width: 50%;
+}
+.fife_cont_elem_right{
+    width: 50%;
+}
+.fife_cont_elem span{
+    display: block;
+}
+.fife_cont_elem img{
+    height: 100px;
+    display: inline-block;
+}
+.fife_cont_elem_cont{
+    width: 80%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.six_slides_quest{
+    display: inline-block;
+}
+.six_cont{
+    display: flex;
+    justify-content: space-between;
+}
+.six_cont_box{
+    width: 50%;
+    margin-top: -30px;
+}
+.six_cont_left img{
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #333;
+}
+.six_cont_right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.six_cont_right img{
+    display: inline-block;
+    width: 500px;
+    border: 2px solid #333;
+}
+.sev_cont{
+    margin: 20px 100px 0 50px;
+}
+.sev_cont p{
+    font: 300 0.8em/1.5 'Roboto',sans-serif;
+    margin-bottom: 30px;
+}
+.eight_descr{
+    margin: 40px 100px 0 50px;
+}
+.eight_descr p{
+    margin-bottom: 25px;
+    font: 300 0.9em/1.5 'Roboto',sans-serif;
 }
