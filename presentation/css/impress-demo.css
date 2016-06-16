@@ -274,3 +274,49 @@ i, em { font-style: italic }
     margin-bottom: 25px;
     font: 300 0.9em/1.5 'Roboto',sans-serif;
 }
+.last_thanks{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.last_thanks h2{
+    margin-top: 80px;
+}
+.last_github{
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+}
+.last_github span a{
+    display: inline-block;
+    font-size: 0.8em;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+}
+.last_github img{
+    width: 50px;
+}
+.last_codepen{
+    position: absolute;
+    bottom: 70px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+}
+.last_codepen span a{
+    display: inline-block;
+    font-size: 0.8em;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+}
+.last_codepen img{
+    width: 50px;
+}
