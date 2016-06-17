@@ -89,26 +89,35 @@ $(function() {
 
 	$("#contact_form").submit(function() {
 		$.ajax({
-			type: "POST",
-			url: "../php/contact_form.php",
-			data: $(this).serialize()
+			url: "https://formspree.io/letehaha@gmail.com", 
+    		method: "POST",
+    		data: $(this).serialize(),
+    		dataType: "json"
 		}).done(function() {
-			// $(this).find("input").val("");
+			$('.input-submit span').fadeIn(100);
+			setTimeout(function(){
+				$('.input-submit span').fadeOut(800);
+			}, 2000);
 			$("#contact_form").trigger("reset");
 		});
 		return false;
 	});
 
+
 	$("#contact_form-message").submit(function() {
 		$.ajax({
-			type: "POST",
-			url: "../php/contact_form-message.php",
-			data: $(this).serialize()
+			url: "https://formspree.io/letehaha@gmail.com", 
+    		method: "POST",
+    		data: $(this).serialize(),
+    		dataType: "json"
 		}).done(function() {
-			// $(this).find("input").val("");
+			$('.input-submit span').fadeIn(100);
+			setTimeout(function(){
+				$('.input-submit span').fadeOut(800);
+			}, 2000);
 			$("#contact_form-message").trigger("reset");
 		});
 		return false;
 	});
-
 });
+// setTimeout($('.input-submit span').show();, 2000);

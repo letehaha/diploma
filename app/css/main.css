@@ -623,7 +623,17 @@ section {
   .form_wrapper-contact form .input-email {
     padding-bottom: 10px; }
   .form_wrapper-contact form .input-submit {
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
+    .form_wrapper-contact form .input-submit span {
+      display: none;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -35px;
+      top: 8px;
+      background: url("../img/form_access_first.png") no-repeat;
+      background-size: cover; }
     .form_wrapper-contact form .input-submit input[type="submit"] {
       margin-bottom: 0;
       background: #2fc989;
@@ -778,7 +788,17 @@ section {
   .form_wrapper form .input-email {
     padding-bottom: 10px; }
   .form_wrapper form .input-submit {
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
+    .form_wrapper form .input-submit span {
+      display: none;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -35px;
+      top: 8px;
+      background: url("../img/form_access_second.png") no-repeat;
+      background-size: cover; }
     .form_wrapper form .input-submit input[type="submit"] {
       margin-bottom: 0;
       background: #2fc989;

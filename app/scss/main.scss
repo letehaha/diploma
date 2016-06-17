@@ -1,5 +1,5 @@
-@import "variable.scss";
-@import "grid.scss";
+@import "variable";
+@import "grid";
 html {
   scroll-behavior: smooth;
 }
@@ -613,6 +613,17 @@ section{
 		}
 		.input-submit{
 			display: inline-block;
+			position: relative;
+			span{
+				display: none;
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				right: -35px;
+				top: 8px;
+				background: url('../img/form_access_first.png') no-repeat;
+				background-size: cover;
+			}
 			input[type="submit"]{
 				margin-bottom: 0;
 				background: $spec_color;
@@ -661,6 +672,8 @@ section{
  		font-weight: 300;
 	}
 }
+
+//////////////////////////////////////////////
 
 .link_contact{
 	margin: 0;
@@ -782,6 +795,17 @@ section{
 		}
 		.input-submit{
 			display: inline-block;
+			position: relative;
+			span{
+				display: none;
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				right: -35px;
+				top: 8px;
+				background: url('../img/form_access_second.png') no-repeat;
+				background-size: cover;
+			}
 			input[type="submit"]{
 				margin-bottom: 0;
 				background: $spec_color;

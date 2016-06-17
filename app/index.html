@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8"/>
   <title>Portfolio | Dmitry Sviridenko — Front-end Developer</title>
-  <!-- <link rel="stylesheet" href="css/reset.css"> -->
-  <!-- <link rel="stylesheet" href="css/main.css"> -->
-  <!-- <link rel="stylesheet" href="css/media.css"> -->
-  <!-- <link rel="stylesheet" href="css/libs.min.css"> -->
+<!--   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/libs.min.css"> -->
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="fonts/fonts.css"/>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -432,6 +432,7 @@
             <textarea name="text_message" id="text_message" cols="30" rows="5" required placeholder="Write something" ></textarea>
           </div>
           <div class="input-submit">
+            <span></span>
             <input type="submit" value="Send" name="submit" id="send">
           </div>
         </form>
@@ -506,6 +507,7 @@
             <textarea name="text_message" id="text_message-message" cols="30" rows="5" placeholder="Write something" required ></textarea>
           </div>
           <div class="input-submit">
+            <span></span>
             <input type="submit" value="Send" name="submit">
           </div>
         </form>
@@ -570,45 +572,46 @@
   <script src="js/libs.min.js"></script>
   <script async src="js/common.js"></script>
   <script async src="js/sorting.js"></script>
-  <!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-	    (function (d, w, c) {
-	        (w[c] = w[c] || []).push(function() {
-	            try {
-	                w.yaCounter37880755 = new Ya.Metrika({
-	                    id:37880755,
-	                    clickmap:true,
-	                    trackLinks:true,
-	                    accurateTrackBounce:true
-	                });
-	            } catch(e) { }
-	        });
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter37880755 = new Ya.Metrika({
+                    id:37880755,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
 
-	        var n = d.getElementsByTagName("script")[0],
-	            s = d.createElement("script"),
-	            f = function () { n.parentNode.insertBefore(s, n); };
-	        s.type = "text/javascript";
-	        s.async = true;
-	        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-	        if (w.opera == "[object Opera]") {
-	            d.addEventListener("DOMContentLoaded", f, false);
-	        } else { f(); }
-	    })(document, window, "yandex_metrika_callbacks");
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/37880755" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/37880755" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 	<!-- Google.Analytics counter -->
 	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-79147273-1', 'auto');
-	  ga('send', 'pageview');
+  ga('create', 'UA-79539024-1', 'auto');
+  ga('send', 'pageview');
 
-	</script>
+</script>
 	<!-- !Google.Analytics counter -->
   <!-- <script src="js/validate.js"></script> -->
 </body>
