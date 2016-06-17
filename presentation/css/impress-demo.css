@@ -261,11 +261,15 @@ i, em { font-style: italic }
     border: 2px solid #333;
 }
 .sev_cont{
-    margin: 20px 100px 0 50px;
+    margin: 40px 100px 0 50px;
+    height: 100%;
+    display: 
+    justify-content: space-around;
 }
 .sev_cont p{
-    font: 300 0.8em/1.5 'Roboto',sans-serif;
-    margin-bottom: 30px;
+    width: 100%;
+    font: 300 1.1em/1.5 'Roboto',sans-serif;
+    margin-bottom: 35px;
 }
 .eight_descr{
     margin: 40px 100px 0 50px;
