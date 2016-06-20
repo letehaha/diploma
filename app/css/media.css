@@ -122,6 +122,18 @@
 	}
 }
 
+@media only screen and (max-width : 720px) {
+	.work-body .work-body-img{
+		min-height: 350px;
+	}
+}
+
+@media only screen and (max-width : 660px) {
+	.work-body .work-body-img{
+		min-height: 300px;
+	}
+}
+
 @media only screen and (max-width : 660px) {
 	.ft-header .ft-group-social li{
 		height: 55px;
@@ -139,7 +151,8 @@
 	.about_wrapper__left .about_main .about_img{
 		padding: 15px;
 	}
-	.link_contact a:hover{background-color: rgba(25, 25, 25, 1);}
+	.link_contact a:hover{background-color: rgba(25, 25, 25, 1);
+	}
 }
 
 @media only screen and (max-width : 580px) {
@@ -187,6 +200,9 @@
 	.ft-section{
 		width: 50%;
 	}
+	.work-body .work-body-img{
+		min-height: 250px;
+	}
 	.work-footer a i{
 		display: none;
 	}
@@ -229,6 +245,9 @@
 	.portfolio_item .work_hover a{
 		font-size: 1.2em;
 		padding: 5px 30px;
+	}
+	.work-body .work-body-img{
+		min-height: 200px;
 	}
 }
 
@@ -275,5 +294,8 @@
 	}
 	.ft-footer p, .ft-footer a{
 		font-size: 10px;
+	}
+	.work-body .work-body-img{
+		min-height: 0;
 	}
 }

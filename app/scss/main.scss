@@ -552,8 +552,9 @@ section{
 	.work-body-img{
 		width: 100%;
 		text-align: center;
+		min-height: 370px;
 		img{
-			display: inline-block;
+			display: block;
 			width: 100%;
 		}
 	}

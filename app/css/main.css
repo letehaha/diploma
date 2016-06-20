@@ -567,9 +567,10 @@ section {
 
 .work-body .work-body-img {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  min-height: 370px; }
   .work-body .work-body-img img {
-    display: inline-block;
+    display: block;
     width: 100%; }
 
 .work-footer {
