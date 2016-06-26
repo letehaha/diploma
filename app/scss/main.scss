@@ -976,6 +976,19 @@ section{
 			}
 		}
 	}
+	.ft-input-submit{
+		position: relative;
+		span{
+			display: none;
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			left: 125px;
+			top: 5px;
+			background: url('../img/form_access_second.png') no-repeat;
+			background-size: cover;
+		}
+	}
 }
 
 .ft-footer{

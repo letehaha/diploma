@@ -84,6 +84,43 @@ $(function() {
 	});
 	
 
+	//sorting
+
+		$('.category_all').click(function(){
+		if($('.portfolio_item').not(':visible')){
+			$('.portfolio_item').show(600);
+		} else{
+
+		}
+	});
+
+	$(".category_site").click(function(){
+		if($('.category_site_item').not(':visible')){
+			$('.category_site_item').show(600);
+			$('.category_landing_item, .category_logo_item').hide(600);
+		}else{
+
+		}
+	});
+
+	$('.category_landing').click(function(){
+		if($('.category_landing_item').not(':visible')){
+			$('.category_landing_item').show(600);
+			$('.category_site_item, .category_logo_item').hide(600);
+		}else{
+
+		}
+	});
+
+	$('.category_logo').click(function(){
+		if($('.category_logo_item').not(':visible')){
+			$('.category_logo_item').show(600);
+			$('.category_site_item, .category_landing_item').hide(600);
+		}else{
+
+		}
+	});
+
 	//forms
 
 
@@ -116,6 +153,22 @@ $(function() {
 				$('.input-submit span').fadeOut(800);
 			}, 2000);
 			$("#contact_form-message").trigger("reset");
+		});
+		return false;
+	});
+
+	$("#ft-form").submit(function() {
+		$.ajax({
+			url: "https://formspree.io/letehaha@gmail.com", 
+    		method: "POST",
+    		data: $(this).serialize(),
+    		dataType: "json"
+		}).done(function() {
+			$('.ft-input-submit span').fadeIn(100);
+			setTimeout(function(){
+				$('.ft-input-submit span').fadeOut(800);
+			}, 2000);
+			$("#ft-form").trigger("reset");
 		});
 		return false;
 	});

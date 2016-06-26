@@ -249,6 +249,9 @@
 	.work-body .work-body-img{
 		min-height: 200px;
 	}
+	.ft-section .ft-input-submit span{
+		left: 70%;
+	}
 }
 
 @media only screen and (max-width : 430px) {
@@ -298,4 +301,5 @@
 	.work-body .work-body-img{
 		min-height: 0;
 	}
+
 }

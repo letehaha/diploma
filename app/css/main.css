@@ -967,6 +967,17 @@ section {
       .ft-section input[type="submit"]:hover {
         background-color: #fff;
         color: black; }
+  .ft-section .ft-input-submit {
+    position: relative; }
+    .ft-section .ft-input-submit span {
+      display: none;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 125px;
+      top: 5px;
+      background: url("../img/form_access_second.png") no-repeat;
+      background-size: cover; }
 
 .ft-footer {
   padding: 15px 20px;
