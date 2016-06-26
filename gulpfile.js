@@ -78,7 +78,7 @@ gulp.task('clean', function() {
 
 gulp.task('build', ["clean","scripts","sass", "css-files"], function() {
 
-    var buildCss = gulp.src('app/css/style.min.css') // Dest css in production
+    var buildCss = gulp.src(['app/css/style.min.css','app/css/404.css']) // Dest css in production
     .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
 
