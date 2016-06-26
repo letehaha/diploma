@@ -85,7 +85,7 @@ gulp.task('build', ["clean","scripts","sass", "css-files"], function() {
     var buildFonts = gulp.src('app/fonts/**/*') // Dest fonts in production
     .pipe(gulp.dest('dist/fonts'))
 
-    // var buildFonts = gulp.src('app/php/**/*') // Dest php in production
+    // var buildPhp = gulp.src('app/php/**/*') // Dest php in production
     // .pipe(gulp.dest('dist/php'))
 
     var buildLanguage = gulp.src('app/ru/**/*')
