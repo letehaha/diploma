@@ -72,7 +72,6 @@ section{
 	  	}
 	}
 }
-
 .main_head{
 	height: 100vh;
 	position: relative;
@@ -224,7 +223,7 @@ section{
 					letter-spacing: 0;
 					a{
 						display: block;
-						line-height: 60px;
+						height: 100%;
 						background-color: transparent;
 						color: #fff;
 						transition: all 350ms cubic-bezier(.215,.61,.215,1);
@@ -234,6 +233,11 @@ section{
 					}
 						i{
 							font-size: 1.5em;
+							display: flex;
+							height: 100%;
+							width: 100%;
+							justify-content: center;
+							align-items: center;
 						}
 					}
 				}
@@ -910,14 +914,18 @@ section{
 			background-color: #555555;
 		}
 		a{
-			position: relative;
 			height: 100%;
 			width: 100%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			display: block;
 			color: white;
 			transition: all .6s;
+			i{
+				display: flex;
+				height: 100%;
+				width: 100%;
+				justify-content: center;
+				align-items: center;
+			}
 		}
 		&:hover {
 			background-color: #fff;
