@@ -51,7 +51,9 @@ a{
 	text-decoration: none;
 	cursor: pointer;
 }
-a,input{
+a,
+input,
+textarea{
 	outline: none;
 }
 :focus{
@@ -65,6 +67,13 @@ textarea, select{
 	width: 100%; 
 	box-sizing: border-box;
 	overflow: hidden;
+}
+/*input:focus,
+textarea:focus{
+	outline-color: rgba(4, 250, 100,1.0);
+}*/
+textarea{
+	resize: none;
 }
 input[type="submit"], button{
 	cursor: pointer;
