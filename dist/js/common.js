@@ -173,4 +173,7 @@ $(function() {
 		return false;
 	});
 });
-// setTimeout($('.input-submit span').show();, 2000);
+
+var dateCp = new Date();
+var yar = dateCp.getFullYear();
+document.getElementById('cp-year').innerHTML = yar;
