@@ -86,7 +86,7 @@ $(function() {
 
 	//sorting
 
-		$('.category_all').click(function(){
+	$('.category_all').click(function(){
 		if($('.portfolio_item').not(':visible')){
 			$('.portfolio_item').show(600);
 		} else{

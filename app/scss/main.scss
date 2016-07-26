@@ -1,5 +1,5 @@
-@import "variable";
-@import "grid";
+@import 'variable';
+@import 'grid';
 html {
   scroll-behavior: smooth;
 }
@@ -443,6 +443,7 @@ section{
 
 .s_portfolio{
 	overflow: hidden;
+	min-height: 575px;
 	h2{
 		&:after{
 			background-color: #fff;

@@ -477,7 +477,8 @@ section {
     color: rgba(0, 0, 0, 0.5); }
 
 .s_portfolio {
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: 575px; }
   .s_portfolio h2:after {
     background-color: #fff; }
   .s_portfolio ul, .s_portfolio li {
