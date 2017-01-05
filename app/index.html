@@ -3,10 +3,6 @@
 <head>
   <meta charset="UTF-8"/>
   <title>Portfolio | Dmitry Sviridenko — Front-end Developer</title>
-<!--   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/media.css"> -->
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="fonts/fonts.css"/>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -70,14 +66,14 @@
     <div class="logo_container">
 
     </div>
-    <button class="toggle_menu">
-      <span class="burger">
+    <button id="js-toggle_menu" class="toggle_menu">
+      <span id="burger" class="burger">
         <span class="band-burg band-burg-1"></span>
         <span class="band-burg band-burg-2"></span>
         <span class="band-burg band-burg-3"></span>
       </span>
     </button>
-    <nav class="top_menu">
+    <nav class="js-top_menu top_menu">
       <ul class="menu">
         <li class="m-1"><a class="item-list-mt" href="#home">Home</a></li>
         <li class="m-2"><a class="item-list-mt" href="#about">About</a></li>
@@ -86,11 +82,11 @@
         <li class="top_menu-social">
           Connect with me
           <ul>
-            <li><a href="https://www.facebook.com/letehaha"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://new.vk.com/letehaha"><i class="fa fa-vk"></i></a></li>
-            <li><a href="http://codepen.io/letehaha/"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-            <li><a href="https://github.com/letehaha"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/letehaha"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a rel="noopener" href="https://www.facebook.com/letehaha"><i class="fa fa-facebook"></i></a></li>
+            <li><a rel="noopener" href="https://new.vk.com/letehaha"><i class="fa fa-vk"></i></a></li>
+            <li><a rel="noopener" href="http://codepen.io/letehaha/"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+            <li><a rel="noopener" href="https://github.com/letehaha"><i class="fa fa-github"></i></a></li>
+            <li><a rel="noopener" href="https://www.linkedin.com/in/letehaha"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
           </ul>
         </li>
       </ul>
@@ -98,7 +94,7 @@
     <div class="top_intro_wrapper">    
       <div class="top_intro_center">
         <h1>Dmitry Sviridenko</h1>
-        <p>Web-designer | Front-end developer</p>
+        <p>Front-end developer</p>
       </div>
     </div>
   </header>
@@ -116,19 +112,19 @@
             </div>
             <div class="about_list">
                 <ul>
-                  <li>Age : 18 yo</li>
-                  <li>City: Poltava</li>
-                  <li>XP: 7 months</li>
+                  <li>Age : <span id="js-myself"></span> yo</li>
+                  <li>City: Kharkov</li>
+                  <li>XP: <span id="js-myexp"></span> year</li>
                   <li>Like: Bike&Books</li>
                   <li>Love: Web-design</li>
                 </ul>
             </div>
           </div>
-          <p>The work I try to perform at the highest quality, fully responsive and supports a wide range of devices. Each project is well-documented and code writing semantically, that would further his service was not difficult for me, and for third-party developers.</p>
+          <p>I try to perform the work at the highest quality, it is fully responsive and supports a wide range of devices. Each project is well-documented and code is written semantically, which would make the project easy to supporting for both me and third-party developers in the future.</p>
         </div>
         <div class="about_wrapper__right">
           <p>I come up with a stylized and intermediate states of interactive elements, if they are not painted designer. Add animation, if you want to spice up the layout. I write scripts for client-side logic that would make content interactive.</p>
-          <p>Sites typeset cross-browser, IE10+ support, if necessary. Before any project optimizes performance - is compressed and glued together styles, scripts and images without any loss in quality.</p>
+          <p>Sites typeset cross-browser, IE9+ support, if necessary. Project is optimized before the handover -  all the styles, scripts, images are compressed and glued together without any loss in quality.</p>
           <p>Familiar with these methods and tools like Git, Jenkins, Bitbucket, Agile / Scrum, which will allow me to quickly join your team.</p>
           <p>The development of love to experiment and use the latest technology from the world of the web, because it is fun :)</p>
         </div>
@@ -144,17 +140,17 @@
     <div class="container_m">
       <div class="skills_wrapper">
         <div class="skills_elem">
-          <p>I build the project with gulp.js. To write a template to use the learning markup Jade, which will accelerate the development and to avoid duplication of code for a typical page blocks. To use styles preprocessors SASS (SCSS) and LESS. Also, bower and npm, without them anywhere :)</p>
+          <p>I build projects with gulp.js. To write a template I use the markup Jade, which will accelerate the development and to avoid duplication of code for a typical page blocks. To use styles preprocessors SASS (SCSS) and LESS. Also, bower and npm, without them anywhere :)</p>
           <div class="skills_bars">
-            <div class="skillbar" data-percent="95%">
+            <div class="skillbar" data-percent="100%">
               <div class="skillbar-title"><span>HTML5/CSS3</span></div>
               <div class="skillbar-bar"></div>
-              <div class="skill-bar-percent">95%</div>
+              <div class="skill-bar-percent">100%</div>
             </div>
-            <div class="skillbar" data-percent="60%">
+            <div class="skillbar" data-percent="80%">
               <div class="skillbar-title"><span>JavaScript/jQuery</span></div>
               <div class="skillbar-bar"></div>
-              <div class="skill-bar-percent">60%</div>
+              <div class="skill-bar-percent">80%</div>
             </div>
             <div class="skillbar" data-percent="85%">
               <div class="skillbar-title"><span>Animation</span></div>
@@ -166,42 +162,41 @@
         <div class="skills_elem">
           <p>In many projects, customers require the ability to manage the content of your site. To achieve this, I integrate front-end templates and WordPress themes offer to implement user-defined functions using PHP.</p>
           <div class="skills_bars">
-            <div class="skillbar" data-percent="60%">
+            <div class="skillbar" data-percent="40%">
               <div class="skillbar-title"><span>WordPress</span></div>
               <div class="skillbar-bar"></div>
-              <div class="skill-bar-percent">60%</div>
+              <div class="skill-bar-percent">40%</div>
             </div>
-            <div class="skillbar" data-percent="40%">
+            <div class="skillbar" data-percent="30%">
               <div class="skillbar-title"><span>PHP</span></div>
               <div class="skillbar-bar"></div>
-              <div class="skill-bar-percent">40%</div>
+              <div class="skill-bar-percent">30%</div>
             </div>
           </div>
         </div>
         <div class="skills_elem">
-          <p>It is not always in their layouts, the designers manage to fully demonstrate all his ideas regarding the design of the site. Two years of experience with the products of Adobe (Photoshop, Illustrator, and Fireworks) will be sufficient, which would help you to display all that has been lost. To create layouts and wireframes prefer Sketch.</p>
+          <p>Designers do not always demonstrate all their ideas about design of the web-site. Two years of experience with the products of Adobe (Photoshop, Illustrator, and Fireworks) will be sufficient, which would help you to display all that has been lost. To create layouts and wireframes I prefer Sketch.</p>
           <div class="skills_bars">
             <div class="skillbar" data-percent="80%">
-            <div class="skillbar-title"><span>PhotoShop</span></div>
-            <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">80%</div>
-          </div>
-          <div class="skillbar" data-percent="45%">
-            <div class="skillbar-title"><span>Illustrator</span></div>
-            <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">45%</div>
-          </div>
-          <div class="skillbar" data-percent="40%">
-            <div class="skillbar-title"><span>Sketch</span></div>
-            <div class="skillbar-bar"></div>
-            <div class="skill-bar-percent">40%</div>
-          </div>
+              <div class="skillbar-title"><span>PhotoShop</span></div>
+              <div class="skillbar-bar"></div>
+              <div class="skill-bar-percent">80%</div>
+            </div>
+            <div class="skillbar" data-percent="35%">
+              <div class="skillbar-title"><span>Illustrator</span></div>
+              <div class="skillbar-bar"></div>
+              <div class="skill-bar-percent">35%</div>
+            </div>
+            <div class="skillbar" data-percent="25%">
+              <div class="skillbar-title"><span>Sketch</span></div>
+              <div class="skillbar-bar"></div>
+              <div class="skill-bar-percent">25%</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <section id="works" class="s_portfolio bg_dark">
     <div class="row-sect">
       <h2>Works</h2>
@@ -209,10 +204,9 @@
     <div class="container_m">
       <div class="filter_s">
         <ul>
-          <li class="category_all active">All work</li>
-          <li class="category_site">Site</li>
-          <li class="category_landing">Landing</li>
-          <!-- <li class="category_logo">Logo</li> -->
+          <li class="js-change-category category_all active">All works</li>
+          <li class="js-change-category category_site">Sites</li>
+          <li class="js-change-category category_landing">Landing</li>
         </ul>
       </div>
       <div class="portfolio_wrapper">
@@ -229,13 +223,15 @@
             </div>
             <div class="work-body">
               <p>Atlantida - a multi-site, which has a spacious design and interesting color palette. It has a slider, smooth scrolling, contact form, comments, etc.</p>
+              <p>No adaptive, IE10+, slider, filter</p>
+              <p><a href="https://free-psd-templates.com/free-creative-one-page-psd-template-atlantida/">Link on .PSD layout.</a></p>
               <div class="work-body-img">
                 <img class="lazyload" data-src="img/folio/atlantida_modal.jpg" alt="Layout Atlantida">
               </div>
             </div>
             <div class="work-footer">
-              <a href="http://letehaha.github.io/Atlantida/">View demo</a>
-              <a href="https://github.com/letehaha/Atlantida-layout">View code<i class="fa fa-github"></i></a>
+              <a rel="noopener" href="http://letehaha.github.io/Atlantida/">View demo</a>
+              <a rel="noopener" href="https://github.com/letehaha/Atlantida-layout">View code<i class="fa fa-github"></i></a>
             </div>
           </div>
         </div>
@@ -257,8 +253,8 @@
               </div>
             </div>
             <div class="work-footer">
-              <a href="http://letehaha.github.io/brandly/">View demo</a>
-              <a href="https://github.com/letehaha/brandly">View code<i class="fa fa-github"></i></a>
+              <a rel="noopener" href="http://letehaha.github.io/brandly/">View demo</a>
+              <a rel="noopener" href="https://github.com/letehaha/brandly">View code<i class="fa fa-github"></i></a>
             </div>
           </div>
         </div>
@@ -280,8 +276,31 @@
               </div>
             </div>
             <div class="work-footer">
-              <a href="http://letehaha.github.io/modern-look/">View demo</a>
-              <a href="https://github.com/letehaha/modern-look">View code<i class="fa fa-github"></i></a>
+              <a rel="noopener" href="http://letehaha.github.io/modern-look/">View demo</a>
+              <a rel="noopener" href="https://github.com/letehaha/modern-look">View code<i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio_item category_site_item">
+          <img class="lazyload" data-src="img/folio/BPtehno.jpg" alt="BPtehno">
+          <div class="work_hover">
+            <h3>BPtehno</h3>
+            <p>Website</p>
+            <a href="#work_4" class="popup_content">View</a>
+          </div>
+          <div class="work_descr mfp-hide" id="work_4">
+            <div class="work-header">
+              <h3>BPtehno</h3>
+            </div>
+            <div class="work-body">
+              <p>BPtehno - a company that carries out delivery fiber optic systems and equipment to the Russian market from leading manufacturers.</p>
+              <p>Adaptive, IE10+, slider, filter, sticky block</p>
+              <div class="work-body-img">
+                <img class="lazyload" data-src="img/folio/BPtehno_modal.jpg" alt="Layout BPtehno">
+              </div>
+            </div>
+            <div class="work-footer">
+              <a rel="noopener" href="http://bptehno.ru">View demo</a>
             </div>
           </div>
         </div>
@@ -290,9 +309,9 @@
           <div class="work_hover">
             <h3>Modest</h3>
             <p>Landing Page</p>
-            <a href="#work_4" class="popup_content">View</a>
+            <a href="#work_5" class="popup_content">View</a>
           </div>
-          <div class="work_descr mfp-hide" id="work_4">
+          <div class="work_descr mfp-hide" id="work_5">
             <div class="work-header">
               <h3>Modest</h3>
             </div>
@@ -303,8 +322,8 @@
               </div>
             </div>
             <div class="work-footer">
-              <a href="http://letehaha.github.io/modest/">View demo</a>
-              <a href="https://github.com/letehaha/modest">View code<i class="fa fa-github"></i></a>
+              <a rel="noopener" href="http://letehaha.github.io/modest/">View demo</a>
+              <a rel="noopener" href="https://github.com/letehaha/modest">View code<i class="fa fa-github"></i></a>
             </div>
           </div>
         </div>
@@ -313,9 +332,9 @@
           <div class="work_hover">
             <h3>MoGo</h3>
             <p>Landing Page</p>
-            <a href="#work_5" class="popup_content">View</a>
+            <a href="#work_6" class="popup_content">View</a>
           </div>
-          <div class="work_descr mfp-hide" id="work_5">
+          <div class="work_descr mfp-hide" id="work_6">
             <div class="work-header">
               <h3>MoGo</h3>
             </div>
@@ -326,8 +345,8 @@
               </div>
             </div>
             <div class="work-footer">
-              <a href="http://letehaha.github.io/MoGo/">View demo</a>
-              <a href="https://github.com/letehaha/Mogo">View code<i class="fa fa-github"></i></a>
+              <a rel="noopener" href="http://letehaha.github.io/MoGo/">View demo</a>
+              <a rel="noopener" href="https://github.com/letehaha/Mogo">View code<i class="fa fa-github"></i></a>
             </div>
           </div>
         </div>
@@ -336,9 +355,9 @@
           <div class="work_hover">
             <h3>Inktattoo</h3>
             <p>Landing Page</p>
-            <a href="#work_6" class="popup_content">View</a>
+            <a href="#work_7" class="popup_content">View</a>
           </div>
-          <div class="work_descr mfp-hide" id="work_6">
+          <div class="work_descr mfp-hide" id="work_7">
             <div class="work-header">
               <h3>Inktattoo</h3>
             </div>
@@ -349,8 +368,31 @@
               </div>
             </div>
             <div class="work-footer">
-              <a href="http://letehaha.github.io/inktattoo/">View demo</a>
-              <a href="https://github.com/letehaha/inktattoo">View code<i class="fa fa-github"></i></a>
+              <a rel="noopener" href="http://letehaha.github.io/inktattoo/">View demo</a>
+              <a rel="noopener" href="https://github.com/letehaha/inktattoo">View code<i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio_item category_landing_item">
+          <img class="lazyload" data-src="img/folio/Plae.jpg" alt="Layout Plae">
+          <div class="work_hover">
+            <h3>Plae</h3>
+            <p>Landing Page</p>
+            <a href="#work_8" class="popup_content">View</a>
+          </div>
+          <div class="work_descr mfp-hide" id="work_8">
+            <div class="work-header">
+              <h3>Plae</h3>
+            </div>
+            <div class="work-body">
+              <p>Plae - just layout</p>
+              <div class="work-body-img">
+                <img class="lazyload" data-src="img/folio/Plae_modal.jpg" alt="Layout Plae">
+              </div>
+            </div>
+            <div class="work-footer">
+              <a rel="noopener" href="http://letehaha.github.io/tests/test-seven/">View demo</a>
+              <a rel="noopener" href="https://github.com/letehaha/tests/tree/master/text-seven">View code<i class="fa fa-github"></i></a>
             </div>
           </div>
         </div>
@@ -368,7 +410,7 @@
           <div class="group">
             <div class="input-fname left">
               <label for="first_name">First name <span>*</span></label>
-              <input type="text" name="first_name" id="first_name" placeholder="eg. Joh" required maxlength="15" >
+              <input type="text" name="first_name" id="first_name" placeholder="eg. John" required maxlength="15" >
             </div>
             <div class="input-sname right">
               <label for="second_name">Second name <span></span></label>
@@ -473,17 +515,17 @@
     <div class="ft-header bg-light-ft">
       <div class="ft-group-addr">
         <div class="vertical-center">
-          <p>+38 (066) 065 1771 | <a href="mailto:dysviridenko@gmail.com">dysviridenko@gmail.com</a></p>
-          <p>Velicotirnovskaya 27/1, Poltava, Ukraine</p>
+          <p><a href="tel:+380660651771">+38 (066) 065 1771</a> | <a rel="noopener" href="mailto:letehaha@gmail.com">letehaha@gmail.com</a></p>
+          <p>Klochkovskaya 218, Kharkov, Ukraine</p>
         </div>
       </div>
       <div class="ft-group-social">
         <ul>
-          <li><a href="https://www.facebook.com/letehaha"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://new.vk.com/letehaha"><i class="fa fa-vk"></i></a></li>
-          <li><a href="http://codepen.io/letehaha/"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-          <li><a href="https://github.com/letehaha"><i class="fa fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/letehaha"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li><a rel="noopener" href="https://www.facebook.com/letehaha"><i class="fa fa-facebook"></i></a></li>
+          <li><a rel="noopener" href="https://new.vk.com/letehaha"><i class="fa fa-vk"></i></a></li>
+          <li><a rel="noopener" href="http://codepen.io/letehaha/"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+          <li><a rel="noopener" href="https://github.com/letehaha"><i class="fa fa-github"></i></a></li>
+          <li><a rel="noopener" href="https://www.linkedin.com/in/letehaha"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
@@ -497,7 +539,7 @@
         <h1 class="title">Maybe are you want:</h1>
         <div class="section-content">
           <p><a href="#contact">Ask me about something</a></p>
-          <p><a class="link_contact-message" href="#contact_message">Discuss your project</a></p>
+          <p><a id="ft-link_contact-message" class="ft-link_contact-message" href="#contact_message">Discuss your project</a></p>
           <p><a href="#about">Read about me again</a></p>
         </div>
       </div>
@@ -517,7 +559,7 @@
       </div>
     </div>
     <div class="ft-footer bg-light-ft">
-      <p>© Copyright <span id="cp-year"></span> | Developed by <a href="https://www.facebook.com/letehaha">Dmitry Sviridenko</a>. All rights reserved</p>
+      <p>© Copyright <span id="cp-year"></span> | Developed by <a rel="noopener" href="https://www.facebook.com/letehaha">Dmitry Sviridenko</a>. All rights reserved</p>
     </div>
   </footer>
 

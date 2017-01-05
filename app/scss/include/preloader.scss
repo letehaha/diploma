@@ -1,0 +1,38 @@
+.loader{
+	background: rgba(52, 73, 94, 1) no-repeat scroll;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 100%;
+	position: fixed;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.preloader-dots{
+		height: 50px;
+	  	width: 80px;
+	  	.dot{
+				display: inline-block;
+			  background: #fff;
+			  height: 8px;
+			  width: 8px;
+			  opacity: 0.3;
+			  border-radius: 50%;
+			  animation: up-and-down 1s infinite;
+			  &:nth-child(2){
+					animation-delay: .1s;
+			  }
+			  &:nth-child(3){
+					animation-delay: .2s;
+			  }
+			  &:nth-child(4){
+					animation-delay: .35s;
+			  }
+			  &:nth-child(5){
+					animation-delay: .4s;
+			  }
+	  	}
+	}
+}

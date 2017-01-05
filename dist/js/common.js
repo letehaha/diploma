@@ -28,6 +28,19 @@ $(function() {
 			$(".top_intro_center").addClass("it_opacity");
 		};
 	});
+// data-en="" data-ru=""
+
+	$('.en').on('click', function() {
+		$('[data-en]').each(function() {
+	  	$(this).text($(this).attr('data-en'));
+	  }); 
+	});
+
+	$('.ru').on('click', function() {
+		$('[data-ru]').each(function() {
+	  	$(this).text($(this).attr('data-ru'));
+	  }); 
+	});
 
 	// transform header-text
 	$(window).scroll(function() {
@@ -86,7 +99,7 @@ $(function() {
 
 	//sorting
 
-		$('.category_all').click(function(){
+	$('.category_all').click(function(){
 		if($('.portfolio_item').not(':visible')){
 			$('.portfolio_item').show(600);
 		} else{
@@ -127,9 +140,9 @@ $(function() {
 	$("#contact_form").submit(function() {
 		$.ajax({
 			url: "https://formspree.io/letehaha@gmail.com", 
-    		method: "POST",
-    		data: $(this).serialize(),
-    		dataType: "json"
+			method: "POST",
+			data: $(this).serialize(),
+			dataType: "json"
 		}).done(function() {
 			$('.input-submit span').fadeIn(100);
 			setTimeout(function(){
@@ -174,6 +187,11 @@ $(function() {
 	});
 });
 
-var dateCp = new Date();
-var yar = dateCp.getFullYear();
+var dateCp = new Date(),
+		yar = dateCp.getFullYear(),
+		yarMyself = yar - 1997,
+		yarMyexp = yar - 2015;
+
+document.getElementById('js-myself').innerHTML = yarMyself;
+document.getElementById('js-myexp').innerHTML = yarMyexp;
 document.getElementById('cp-year').innerHTML = yar;

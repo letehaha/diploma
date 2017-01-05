@@ -34,38 +34,22 @@ gulp.task('scripts', function() {
         'app/libs/animate/animate-css.js', // Animate
         'app/libs/magnific-popup/magnificPopup.min.js', // magnificPopup
         'app/libs/scroll2id/PageScroll2id.min.js' // PageScroll2id
-        // 'app/libs/lazysizes/lazysizes.min.js'
         ])
         .pipe(concat('libs.min.js')) // Concat in a new file libs.min.js
         .pipe(uglify()) // Compress
         .pipe(gulp.dest('app/js')); // Dest in app/js
 });
 
-
-gulp.task('css-libs', function() {
-    return gulp.src([ // Take all the css files and minify
-    	'app/libs/animate/animate.min.css',
-    	'app/libs/font-awesome/font-awesome.min.css',
-    	'app/libs/magnific-popup/magnific-popup.min.css'
-    	]) 
-    	.pipe(concat('libs.min.css')) // Concat the new file libs.min.css
-        .pipe(cssnano()) // Compress
-        .pipe(gulp.dest('app/css')); // Dest in app/css
-});
-
 gulp.task('css-files', function() {
     return gulp.src([ // Take all the css files and minify
-        'app/css/reset.css',
-        'app/css/main.css',
-        'app/css/media.css',
-        'app/css/libs.min.css'
+        'app/css/main.css'
         ])
         .pipe(concat('style.min.css')) // Concat the new file libs.min.css
         .pipe(cssnano()) // Compress
         .pipe(gulp.dest('app/css')); // Dest in app/css
 });
 
-gulp.task('watch', ['browser-sync', 'sass', 'scripts', 'css-libs'], function(){
+gulp.task('watch', ['browser-sync', 'sass', 'scripts' , 'css-files'], function(){
 	gulp.watch('app/scss/**/*.scss', ['sass']);
 	gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/*.сss', browserSync.reload);
@@ -84,9 +68,6 @@ gulp.task('build', ["clean","scripts","sass", "css-files"], function() {
 
     var buildFonts = gulp.src('app/fonts/**/*') // Dest fonts in production
     .pipe(gulp.dest('dist/fonts'))
-
-    // var buildPhp = gulp.src('app/php/**/*') // Dest php in production
-    // .pipe(gulp.dest('dist/php'))
 
     var buildLanguage = gulp.src('app/ru/**/*')
     .pipe(htmlmin({collapseWhitespace: true}))
