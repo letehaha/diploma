@@ -1,16 +1,9 @@
-<<<<<<< HEAD
 @import 'include/lib.magnific-popup.scss';
 @import 'include/lib.fontawesome.scss';
 @import 'include/reset.scss';
 @import 'include/vars.scss';
 @import 'include/animations.scss';
 @import 'include/grid.scss';
-
-
-=======
-@import 'variable';
-@import 'grid';
->>>>>>> 3ff1cf942b145c4fa2d0c1a748d4554837452b59
 html {
   scroll-behavior: smooth;
 }
@@ -79,9 +72,7 @@ section{
 
 /////////// Section PORTFOLIO
 
-<<<<<<< HEAD
 @import 'include/portfolio.scss';
-=======
 .s_portfolio{
 	overflow: hidden;
 	min-height: 575px;
@@ -230,7 +221,6 @@ section{
 		}
 	}
 }
->>>>>>> 3ff1cf942b145c4fa2d0c1a748d4554837452b59
 
 /////////// Section CONTACT
 

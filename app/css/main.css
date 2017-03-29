@@ -2095,6 +2095,22 @@ select::-ms-expand {
   -webkit-animation-name: fadeInUp;
           animation-name: fadeInUp; }
 
+@-webkit-keyframes waypoint {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+@keyframes waypoint {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+.waypoint {
+  -webkit-animation-name: waypoint;
+          animation-name: waypoint; }
+
 .container_m {
   max-width: 1440px;
   margin: 0 auto;
@@ -2549,6 +2565,147 @@ section {
     color: rgba(0, 0, 0, 0.5); }
 
 .s_portfolio {
+  overflow: hidden; }
+  .s_portfolio h2:after {
+    background-color: #fff; }
+  .s_portfolio ul, .s_portfolio li {
+    text-align: center; }
+  .s_portfolio li {
+    display: inline-block;
+    text-transform: uppercase;
+    font: 300 12px/24px "Open Sans", "Arial", sans-serif;
+    letter-spacing: .2em;
+    margin: 0 10px;
+    color: #555;
+    cursor: pointer; }
+    .s_portfolio li.active {
+      color: #fff;
+      border-bottom: #2fc989 1px solid; }
+  .s_portfolio ul {
+    margin-bottom: 50px; }
+
+.portfolio_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.portfolio_item {
+  width: 23%;
+  position: relative;
+  margin: 0 1% 30px;
+  min-height: 300px; }
+  .portfolio_item img {
+    width: 100%;
+    display: block; }
+  .portfolio_item:hover .work_hover {
+    opacity: 1;
+    padding-top: 25%; }
+  .portfolio_item .work_hover {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    padding-top: 15%;
+    opacity: 0;
+    -webkit-transition: all .6s;
+    transition: all .6s; }
+    .portfolio_item .work_hover h3 {
+      color: #fafafa;
+      font: 400 1.5em/1.5em "Open Sans", "Arial", sans-serif;
+      letter-spacing: .1em; }
+    .portfolio_item .work_hover p {
+      margin-top: 5%;
+      color: #fafafa;
+      font: 300 1em/2em "Open Sans", "Arial", sans-serif;
+      letter-spacing: .1em; }
+    .portfolio_item .work_hover a {
+      margin-top: 10%;
+      background-color: transparent;
+      border: 1px solid #2fc989;
+      color: #2fc989;
+      padding: 5px 20px;
+      font: 400 1em/1.5em "Open Sans", "Arial", sans-serif;
+      display: inline-block;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+      .portfolio_item .work_hover a:hover {
+        color: #fff;
+        background-color: #2fc989;
+        border: 1px solid #138A56; }
+
+.work_descr {
+  position: relative;
+  background: #e6e6e6;
+  padding: 20px;
+  width: auto;
+  max-width: 700px;
+  margin: 20px auto; }
+
+.work-header {
+  text-align: center; }
+  .work-header h3 {
+    display: inline-block;
+    font: 400 2em/2.5em "Open Sans", "Arial", sans-serif;
+    letter-spacing: 1px;
+    color: #292f36;
+    padding-bottom: 0.2em;
+    margin-bottom: 1em;
+    text-align: center;
+    border-bottom: 1px solid #2fc989; }
+
+.work-body p {
+  font: 300 1.2em/26px "Open Sans", "Arial", sans-serif;
+  margin-bottom: 1em;
+  color: #292f36; }
+  .work-body p a {
+    color: #2fc989; }
+
+.work-body .work-body-img {
+  width: 100%;
+  text-align: center;
+  min-height: 370px; }
+  .work-body .work-body-img img {
+    display: block;
+    width: 100%; }
+
+.work-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px; }
+  .work-footer a {
+    padding: 15px 30px;
+    background-color: #2fc989;
+    width: 47%;
+    text-align: center;
+    color: #fff;
+    font: 400 1.5em/1.5em "Open Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out; }
+    .work-footer a i {
+      margin-left: 10px;
+      font-size: 1.5em; }
+    .work-footer a:hover {
+      background-color: #138A56; }
+
+.s_portfolio {
   overflow: hidden;
   min-height: 575px; }
   .s_portfolio h2:after {
@@ -2647,8 +2804,6 @@ section {
   font: 300 1.2em/26px "Open Sans", "Arial", sans-serif;
   margin-bottom: 1em;
   color: #292f36; }
-  .work-body p a {
-    color: #2fc989; }
 
 .work-body .work-body-img {
   width: 100%;
