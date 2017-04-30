@@ -5,3 +5,4 @@ node_modules
 gulp_tasks.txt
 .domains
 backups
+dist
