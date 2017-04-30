@@ -1,0 +1,75 @@
+@import 'include/vars';
+@import 'include/reset';
+
+body{
+	background-color: $bg-light-ft;
+}
+
+.redesign--wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+	color: $light_text-color;
+	h2{
+		font-size: 36px;
+		animation: 1s showText;
+	}
+	h1{
+		font-size: 120px;
+		animation: 1s showText;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+	}
+	.but{
+		font-size: 26px;
+		animation: 1s showText;
+		animation-delay: 2.5s;
+		animation-fill-mode: forwards;
+		opacity: 0;
+		font-weight: 300;
+	}
+	.next{
+		font-size: 20px;
+		font-weight: 400;
+		animation: 1s showText;
+		animation-delay: 3.2s;
+		opacity: 0;
+		animation-fill-mode: forwards;
+	}
+	a{
+		color: $spec_color;
+		transition: .7s;
+		border-bottom: 1px solid transparent;
+		&:hover{
+			border-color: $light_text-color;
+		}
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	.redesign--wrapper h1{font-size: 90px;}
+}	
+@media only screen and (max-width : 470px) {
+	.redesign--wrapper h1{font-size: 60px;}
+	.but{width: 100%;display: block;}
+}	
+
+@keyframes showText{
+	0%{
+		transform: translateY(-40px);
+		opacity: 0;
+	}
+	70%{
+		transform: translateY(3px);
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}

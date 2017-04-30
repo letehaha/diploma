@@ -12,7 +12,10 @@ var gulp 		= require('gulp'),
     imagemin 	= require('gulp-imagemin');
 
 gulp.task('sass', function(){
-	return gulp.src('app/scss/main.scss')
+	return gulp.src([
+            'app/scss/main.scss', 
+            'app/scss/redesign.scss'
+        ])
 		.pipe(sass())
 		.pipe(autoprefixer())
 		.pipe(gulp.dest('app/css'))
@@ -62,7 +65,7 @@ gulp.task('clean', function() {
 
 gulp.task('build', ["clean","scripts","sass", "css-files"], function() {
 
-    var buildCss = gulp.src(['app/css/style.min.css','app/css/404.css']) // Dest css in production
+    var buildCss = gulp.src(['app/css/style.min.css','app/css/404.css', 'app/css/redesign.css']) // Dest css in production
     .pipe(cssnano())
     .pipe(gulp.dest('dist/css'))
 

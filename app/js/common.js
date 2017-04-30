@@ -13,15 +13,15 @@ $(function() {
 	// });
 
 	// animated elements
-	let topIntroCenter = document.getElementsByClassName('top_intro_center')[0];
+	let topIntroCenter = document.getElementById('js-title-animate');
 	topIntroCenter.getElementsByTagName('h1')[0].classList.add('animated', 'fadeInDown');
 	topIntroCenter.getElementsByTagName('p')[0].classList.add('animated', 'fadeInUp');
 	// $(".top_intro_center h1").addClass('animated fadeInDown');
 	// $(".top_intro_center p").addClass('animated fadeInUp');
 
 	
-	// enable/disable top_menu
-	let toggleMenu = document.getElementById('js-toggle_menu');
+	// enable/disable top-menu
+	let toggleMenu = document.getElementById('js-toggle-menu');
 	let topMenu = document.getElementsByClassName('js-top_menu')[0];
 	let burger = document.getElementById('burger');
 
@@ -73,7 +73,7 @@ $(function() {
 
 		var st = $(this).scrollTop();
 
-		$(".top_intro_center").css({
+		$("#js-title-animate").css({
 			"transform" : "translate(0%, " + st/6  + "%"
 		});
 	});
@@ -158,38 +158,26 @@ $(function() {
 	//sorting
 
 	$('.category_all').click(function(){
-		if($('.portfolio_item').not(':visible')){
+		if($('.portfolio_item').not(':visible'))
 			$('.portfolio_item').show(600);
-		} else{
-
-		}
 	});
 
 	$(".category_site").click(function(){
-		if($('.category_site_item').not(':visible')){
+		if($('.category_site_item').not(':visible'))
 			$('.category_site_item').show(600);
 			$('.category_landing_item, .category_logo_item').hide(600);
-		}else{
-
-		}
 	});
 
 	$('.category_landing').click(function(){
-		if($('.category_landing_item').not(':visible')){
+		if($('.category_landing_item').not(':visible'))
 			$('.category_landing_item').show(600);
 			$('.category_site_item, .category_logo_item').hide(600);
-		}else{
-
-		}
 	});
 
 	$('.category_logo').click(function(){
-		if($('.category_logo_item').not(':visible')){
+		if($('.category_logo_item').not(':visible'))
 			$('.category_logo_item').show(600);
 			$('.category_site_item, .category_landing_item').hide(600);
-		}else{
-
-		}
 	});
 
 	//forms
@@ -247,8 +235,8 @@ $(function() {
 
 var dateCp = new Date(),
 		yar = dateCp.getFullYear(),
-		yarMyself = yar - 1997,
-		yarMyexp = yar - 2015;
+		yarMyself = yar - 1998,
+		yarMyexp = yar - 2016;
 
 document.getElementById('js-myself').innerHTML = yarMyself;
 document.getElementById('js-myexp').innerHTML = yarMyexp;
